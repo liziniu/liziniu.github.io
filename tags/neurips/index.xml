@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NeurIPS on Ziniu Li</title>
+    <link>/tags/neurips/</link>
+    <description>Recent content in NeurIPS on Ziniu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/neurips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Error Bounds of Imitating Policies and Environments (NeurIPS 2020)</title>
+      <link>/post/neurips2020_error_bound/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/neurips2020_error_bound/</guid>
+      <description>&lt;p&gt;This blog summarizes our work of &lt;em&gt;error bounds of imitating policies and environments&lt;/em&gt;, which is presented at NeurIPS 2020.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

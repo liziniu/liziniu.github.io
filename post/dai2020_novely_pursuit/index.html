@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Efficient Exploration by Novelty Pursuit (DAI 2020) - Ziniu Li</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Efficient Exploration by Novelty Pursuit (DAI 2020)" />
+<meta property="og:description" content="This blog summarizes our work of efficient exploration by novelty pursuit, which is presented at DAI 2020." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/dai2020_novely_pursuit/" />
+<meta property="article:published_time" content="2021-03-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-16T00:00:00+00:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Efficient Exploration by Novelty Pursuit (DAI 2020)"/>
+<meta name="twitter:description" content="This blog summarizes our work of efficient exploration by novelty pursuit, which is presented at DAI 2020."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Ziniu Li" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Ziniu Li</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/presentation/">
+				
+				<span class="menu__text">Presentation</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/publication/">
+				
+				<span class="menu__text">Publication</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/teaching/">
+				
+				<span class="menu__text">Teching</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Efficient Exploration by Novelty Pursuit (DAI 2020)</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-03-16T00:00:00Z">March 16, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/publication/" rel="category">publication</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>This blog summarizes our work of <em>efficient exploration by novelty pursuit</em>, which is presented at DAI 2020.</p>
+<p>In our DAI 2020 paper <a href="/docs/dai2020_paper.pdf"><em>efficient exploration by novelty pursuit</em></a> <a href="#1">[1]</a>, which is a joint work with <a href="http://www.lamda.nju.edu.cn/chenxh/">Xiong-Hui Chen</a>, we consider the exploration efficiency in reinforcement learning (RL).  The target of RL is to search for the optimal decision by interacting with unknown environments. Due to limited information, the agent needs to attempt various actions (i.e., exploration) to discover potential rewards.</p>
+<p>Based on the idea of intrinsically motivated goal exploration processes (IMGEP) <a href="#2">[2]</a> and maximum state entropy exploration (MSEE) <a href="#3">[3]</a>, we propose to employ a goal-conditioned policy to efficiently explore. In particular, our method performs the exploration in two stages: first, it selects a seldom visited state as the target for the goal-conditioned policy to reach the boundary of the explored region; second, it takes random actions to explore the non-explored region. See Figure 1 below for the illustration.</p>
+
+
+    <div style="text-align: center;">
+    <figure>
+        <img src="/images/paper/dai2020_goal_exploration.jpg" style="zoom:30%;" />
+        <figcaption>Figure 1. Illustration for the exploration scheme in novelty pursuit.</figcaption>
+    </figure>
+    </div>
+
+<p>As we can see, the key idea of our method is to distinguish explored and non-explored states, then try to visit non-explored states by the goal-conditioned policy.</p>
+<p>We test our methods on several hard exploration tasks such as Maze, MuJoCo robotic control, and SuperMarioBros video games. For instance, for the SuparMarioBros-1-3 task, our method outperforms the vanilla method and the method based on reward bonus; see Figure 2.</p>
+
+
+    <div style="text-align: center;">
+    <figure>
+        <img src="/images/paper/dai2020_supermariobros_3.png" style="zoom:50%;" />
+        <figcaption>Figure 2. Trajectory visualization on SuperMarioBros-1-3. Trajectories are plotted in green cycles with the same training samples. The agent starts from the most left part and needs to fetch the flag on the most right part. Top row: vanilla method; middle row: vanilla method + reward bonus; bottom row: novelty pursuit (ours).</figcaption>
+    </figure>
+    </div>
+
+<p>See the following video for the illustration of learned policies by our method on SuperMarioBros tasks.</p>
+
+
+<div style="text-align: center;">
+<video width="320" height="240" controls>
+  <source src="/images/paper/mario-video.mp4" type="video/mp4"> 
+  Your browser does not support video format.
+</video>
+</div>
+
+
+
+<p>
+<span id="1">[1] Ziniu Li, and Xiong-Hui Chen. "Efficient Exploration by Novelty-Pursuit." DAI 2020.</span>
+</p>
+
+<p>
+<span id="2">[2] Forestier, Sébastien, et al. "Intrinsically motivated goal exploration processes with automatic curriculum learning." arXiv:1708.02190 (2017). </span>
+</p>
+
+<p>
+<span id="3">[3] Hazan, Elad, et al. "Provably efficient maximum entropy exploration." ICML 2019. </span>
+</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dai/" rel="tag">DAI</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Ziniu Li avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Ziniu Li</span>
+	</div>
+	<div class="authorbox__description">
+		Ziniu Li is a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ). His research interests include reinforcement learning, optimization, and learning theory.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/ijcai2020_sges/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Self-Guided Evolution Strategies with Historical Estimated Gradients (IJCAI 2020)</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/neurips2020_error_bound/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Error Bounds of Imitating Policies and Environments (NeurIPS 2020)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Ziniu Li.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

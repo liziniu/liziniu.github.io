@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Self-Guided Evolution Strategies with Historical Estimated Gradients (IJCAI 2020) - Ziniu Li</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Self-Guided Evolution Strategies with Historical Estimated Gradients (IJCAI 2020)" />
+<meta property="og:description" content="This blog summarizes our work of self-guided evolution strategies with historical estimated gradients, which is presented at IJCAI 2020." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/ijcai2020_sges/" />
+<meta property="article:published_time" content="2021-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-10T00:00:00+00:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Self-Guided Evolution Strategies with Historical Estimated Gradients (IJCAI 2020)"/>
+<meta name="twitter:description" content="This blog summarizes our work of self-guided evolution strategies with historical estimated gradients, which is presented at IJCAI 2020."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Ziniu Li" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Ziniu Li</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/presentation/">
+				
+				<span class="menu__text">Presentation</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/publication/">
+				
+				<span class="menu__text">Publication</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/teaching/">
+				
+				<span class="menu__text">Teching</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Self-Guided Evolution Strategies with Historical Estimated Gradients (IJCAI 2020)</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-02-10T00:00:00Z">February 10, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/publication/" rel="category">publication</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>This blog summarizes our work of <em>self-guided evolution strategies with historical estimated gradients</em>, which is presented at IJCAI 2020.</p>
+<p>In our IJCAI 2020 paper <a href="/docs/ijcai_sges_paper.pdf"><em>self-guided evolution strategies with historical estimated gradients</em></a> <a href="#1">[1]</a>, which is a joint work with Fei-yu Liu and <a href="http://www.lamda.nju.edu.cn/qianc/">Chao Qian</a>, we consider to improve the efficiency of evolution strategies (ES). In particular, ES is a class of black-box optimization algorithms and has been applied to various problems where only zeroth-order information (i.e., function values) is given. Typically, ES estimates gradients from random directions, then performs gradient-based updates. To improve the efficiency of ES, we develop an adaptive method that leverages the historical gradient information to harness the optimization dynamics; see Figure 1 for the algorithm procedure.</p>
+
+
+    <div style="text-align: center;">
+    <figure>
+        <img src="/images/paper/ijcai2020_sges_algorithm.png" style="zoom:40%;" />
+        <figcaption>Figure 1. Algorithm of self-guided evolution strategies (SGES).</figcaption>
+    </figure>
+    </div>
+
+<p>Concretely, our method constructs a low-dimensional subspace to sample search directions and adjusts the importance of this subspace adaptively by the fitness. For instance, if a low-dimensional subspace could provide more function value reductions, we add the weight of this subspace for sampling.</p>
+<p>Our method is computationally efficient than previous methods <a href="#2">[2]</a><a href="#3">[3]</a> and its performance is also competitive to other methods on the benchmark tasks; see Figure 2.</p>
+
+
+    <div style="text-align: center;">
+    <figure>
+        <img src="/images/paper/ijcai2020_sges_performance.png" style="zoom:45%;" />
+        <figcaption>Figure 2. Performance of various methods on the benchmark black-box functions.</figcaption>
+    </figure>
+    </div>
+
+
+
+<p>
+<span id="1">[1] Fei-yu Liu, Ziniu Li, and Chao Qian. "Self-guided evolution strategies with historical estimated gradients." IJCAI 2020. </span>
+</p>
+
+<p>
+<span id="2">[2] Choromanski, Krzysztof, et al. "From complexity to simplicity: Adaptive es-active subspaces for blackbox optimization." NeurIPS 2020.  </span>
+</p>
+
+
+<p>
+<span id="3">[3] Hansen, Nikolaus. "The CMA evolution strategy: A tutorial." arXiv:1604.00772 (2016). </span>
+</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ijcai/" rel="tag">IJCAI</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Ziniu Li avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Ziniu Li</span>
+	</div>
+	<div class="authorbox__description">
+		Ziniu Li is a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ). His research interests include reinforcement learning, optimization, and learning theory.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/dai2020_novely_pursuit/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Efficient Exploration by Novelty Pursuit (DAI 2020)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Ziniu Li.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
