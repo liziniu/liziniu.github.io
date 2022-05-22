@@ -1,0 +1,62 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+==Ziniu Li
+
+~~~
+{}{img_left}{images/ziniuli.jpg}{alt text}{160}{230}{www.liziniu.org}
+PhD student,\n
+[https://sds.cuhk.edu.cn/en School of Data Science], \n
+[https://www.cuhk.edu.cn/en The Chinese University of Hong Kong, Shenzhen]\n
+
+Email: ziniuli@link.cuhk.edu.cn
+
+[https://twitter.com/ZiniuLi \[Twitter\] ] [https://www.zhihu.com/people/mo-fei-10-41 \[Zhihu\] ]
+~~~
+
+== About me
+
+I am a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), advised by [https://scholar.google.com/citations?user=dW3gcXoAAAAJ&hl=en Prof. Zhi-Quan (Tom) Luo]. My research interest is reinforcement learning.
+
+
+My curriculum vitae can be download at [docs/CV_Ziniu_Li.pdf here].
+
+== Selective Works
+
+*: indicating equal contribution or alphabetic ordering.
+
+- [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
+  *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo. \n
+  In Proceedings of the 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
+  (This work presents that first reduction of off-line AIL to BC)
+
+
+- [https://arxiv.org/abs/2106.10424 On Generalization of Adversarial Imitation Learning and Beyond] \n
+  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo. \n
+  arXiv:2106.10424. \n
+  (This work presents the first horizon-free sample complexity bound of online AIL, which provably beats BC)
+
+
+- [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
+  *Ziniu Li*, Yingru Li, Yushun Zhang, Tong Zhang, Zhi-Quan Luo \n
+  In Proceedings of the 10th International Conference on Learning Representations (ICLR), 2022 \n
+  (This work is selective as the *oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
+
+
+== Service
+
+==== Reviewer
+
+ICML'2022, ICLR'2022 ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Award]), DAI'2020.
+
+==== Teaching Assistant
+
+- DDA6111: Discrete Optimization. 2022 Spring, CUHKSZ.
+
+- CSC4120: Design and Analysis of Algorithms. 2021 Fall, CUHKSZ.
+
+- FTE4560: Basic Machine Learning. 2021 Spring, CUHKSZ.
+
+- MAT3007: Introduction to Optimization. 2020 Fall, CUHKSZ.
+
+== Award
+
+- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data.
