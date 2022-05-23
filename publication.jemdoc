@@ -9,24 +9,24 @@
 === 2022
 
 - [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
-  *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo. \n
+  *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
   In Proceedings of the 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
   (This work presents that first reduction of off-line AIL to BC)
 
 - [https://arxiv.org/abs/2203.11489 A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle] \n
-  *Ziniu Li\**, Tian Xu\*, Yang Yu. A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle. \n
+  *Ziniu Li\**, Tian Xu\*, Yang Yu \n
   arXiv:2203.11489.
 
 - [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
   *Ziniu Li*, Yingru Li, Yushun Zhang, Tong Zhang, Zhi-Quan Luo \n
   In Proceedings of the 10th International Conference on Learning Representations (ICLR), 2022 \n
-  (This work is selective as the *oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
+  (This work is selected as an *oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
 
 
 === 2021
 
 - [https://arxiv.org/abs/2106.10424 On Generalization of Adversarial Imitation Learning and Beyond] \n
-  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo. \n
+  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   arXiv:2106.10424. \n
   (This work presents the first horizon-free sample complexity bound of online AIL, which provably beats BC)
 
