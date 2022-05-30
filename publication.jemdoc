@@ -11,7 +11,6 @@
 - [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
   In Proceedings of the 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
-  (This work presents that first reduction of off-line AIL to BC)
 
 - [https://arxiv.org/abs/2203.11489 A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle] \n
   *Ziniu Li\**, Tian Xu\*, Yang Yu \n
@@ -28,7 +27,6 @@
 - [https://arxiv.org/abs/2106.10424 On Generalization of Adversarial Imitation Learning and Beyond] \n
   Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   arXiv:2106.10424. \n
-  (This work presents the first horizon-free sample complexity bound of online AIL, which provably beats BC)
 
 - [http://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf A Concise Introduction to Imitation Learning] (In Chinese) \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
@@ -40,7 +38,7 @@ Tian Xu, *Ziniu Li*, Yang Yu \n
 
 === 2020
 
-- Error Bounds of Imitating Policies and Environments \n
+- [https://arxiv.org/abs/2010.11876 Error Bounds of Imitating Policies and Environments] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
   In Advances in Neural Information Processing Systems 33 (NeurIPS), 2020.
 
@@ -58,7 +56,7 @@ Tian Xu, *Ziniu Li*, Yang Yu \n
 
 === 2019
 
-- [https://arxiv.org/abs/1911.07027On Value Discrepancy of Imitation Learning] \n
+- [https://arxiv.org/abs/1911.07027 On Value Discrepancy of Imitation Learning] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
   arXiv:1911.07027
 
