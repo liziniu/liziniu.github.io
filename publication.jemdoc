@@ -11,8 +11,7 @@
 - [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
   Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   arXiv:2208.01899 \n
-  (The early version of this work is at arXiv:2106.10424v3)
-
+  (The early version of this work is at arXiv:2106.10424v3, titled On Generalization of Adversarial Imitation Learning and Beyond)
 
 
 - [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
@@ -31,15 +30,15 @@
 
 === 2021
 
-- [https://arxiv.org/abs/2106.10424 On Generalization of Adversarial Imitation Learning and Beyond] \n
-  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
+- [https://arxiv.org/abs/2106.10424 More Efficient Adversarial Imitation Learning Algorithms with Known and Unknown Transitions ] \n
+  Tian Xu\*, *Ziniu Li\* *, Yang Yu \n
   arXiv:2106.10424 \n
 
 - [http://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf A Concise Introduction to Imitation Learning] (In Chinese) \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
 
 
-- [https://proceedings.neurips.cc/paper/2020/file/b5c01503041b70d41d80e3dbe31bbd8c-Paper.pdf Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
+- [https://ieeexplore.ieee.org/document/9485061 Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
 Tian Xu, *Ziniu Li*, Yang Yu \n
  IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021
 

@@ -14,10 +14,13 @@ Email: ziniuli@link.cuhk.edu.cn
 
 == About me
 
-I am a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), advised by [https://scholar.google.com/citations?user=dW3gcXoAAAAJ&hl=en Prof. Zhi-Quan (Tom) Luo]. My research interest is reinforcement learning.
+I am a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), advised by [https://scholar.google.com/citations?user=dW3gcXoAAAAJ&hl=en Prof. Zhi-Quan (Tom) Luo].
 
+My research interest is reinforcement learning theory, algorithms, and applications.
 
-My curriculum vitae can be downloaded at [docs/CV_Ziniu_Li.pdf here].
+I have worked/interned at Tencent, Nanjing University, Cardinal Operations, etc.
+
+My curriculum vitae can be downloaded from [docs/CV_Ziniu_Li.pdf here].
 
 == Selective Work
 
@@ -26,13 +29,13 @@ My curriculum vitae can be downloaded at [docs/CV_Ziniu_Li.pdf here].
 - [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
   Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   arXiv:2208.01899 \n
-  (This work presents the first horizon-free sample complexity bound of online AIL)
+  (This work presents the first horizon-free sample complexity bound of adversarial imitation learning (AIL), \n providing an answer to the open question --why does AIL outperform BC by a wide margin, particularly in the low data regime ? --\n raised in CoRL 2019 best paper by Ghasemipour et al.)
 
 
 - [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
   In Proceedings of the 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
-  (This work presents that first reduction of off-line AIL to BC)
+  (This work presents the first reduction of offline AIL to BC, showing that AIL is no better than BC in the offline setting)
 
 
 - [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
@@ -45,9 +48,11 @@ My curriculum vitae can be downloaded at [docs/CV_Ziniu_Li.pdf here].
 
 ==== Reviewer
 
-ICML'2022 ([https://icml.cc/Conferences/2022/Reviewers Outstanding Award]), ICLR'2022 ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Award]), DAI'2020.
+NeurIPS'2022 ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), ICML'2022 ([https://icml.cc/Conferences/2022/Reviewers Outstanding Award]), ICLR'2022 ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Award]), DAI'2020.
 
 ==== Teaching Assistant
+
+- CSC4120: Design and Analysis of Algorithms. 2022 Fall, CUHKSZ.
 
 - DDA6111: Discrete Optimization. 2022 Spring, CUHKSZ.
 
@@ -56,6 +61,10 @@ ICML'2022 ([https://icml.cc/Conferences/2022/Reviewers Outstanding Award]), ICLR
 - FTE4560: Basic Machine Learning. 2021 Spring, CUHKSZ.
 
 - MAT3007: Introduction to Optimization. 2020 Fall, CUHKSZ.
+
+==== Lecturer
+
+- Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX.
 
 == Award
 
