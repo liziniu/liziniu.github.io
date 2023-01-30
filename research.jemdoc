@@ -1,0 +1,86 @@
+# jemdoc: menu{MENU}{research.html}, nofooter
+
+== Research
+
+
+"To complicate is easy. To simplify is difficult." -- Bruno Munari
+
+My research focuses on machine learning applications and aims to design effective and efficient algorithms and provide the associated theoretical analysis. Existing research results (finished with many collaborators) are summarized below.
+
+
+=== Imitation Learning
+
+
+Background: Imitation learning trains good policies from expert/human demonstrations, with applications in autonomous driving, robotics, etc. \n
+   Many algorithms, such as behavioral cloning (BC) and adversarial imitation learning (AIL), have been developed. \n
+   However, the theoretical foundation remains under-developed: which algorithm performs better? in what scenario?
+
+Contribution:
+
+ - A general framework to study the error bounds of imitating policies and environments.\[1\]\[2\]
+
+ - A reduction of off-line AIL methods to BC.\[3\]
+
+ - A horizon-free sample complexity bound to explain and support the superior performance of online AIL methods.\[4\]
+
+ - An efficient algorithm to address the interaction efficiency of online AIL methods.\[5\]
+
+ - A theoretical analysis of imitation learning with supplementary dataset.\[6\]
+
+=== Reinforcement Learning
+
+
+General Background: Reinforcement learning (RL) refers to a class of algorithms that solve long-term decision-making problems. \n
+    My research covers many aspects of RL, which will be explained below.
+
+==== Exploration
+
+
+Background: Typically, RL applications have huge state-action space (i.e., enormous decision choices) and noisy feedback (due to transition and reward noise). \n
+  A scenario is the online setting, where the agent interacts with the environment to improve performance based on the collected data. \n
+  In this case, RL algorithms have to explore uncertain actions when maximizing the long-term return. \n
+  The key research problem is to improve the exploration (i.e., data-collection) efficiency.
+
+Contribution:
+
+- A intrinsically motivated exploration method that performs well especially on SuperMarioBros games.\[7\]
+
+- A randomized exploration method that solves many challenging tasks with cheap computation.\[8\]
+
+
+==== Training
+
+
+Background: In addition to the exploration issue, RL methods need to solve non-linear Bellman equations when training. \n
+  The key problems include but are not limited to numerical stability and computation efficiency.
+
+
+Contribution:
+
+- A theoretical verification of target Q-learning, an algorithm that is widely used in practice, in the tabular setting.\[9\]
+
+- A heuristic-guided black-box optimization algorithm for deep RL (and other derivative-free problems).\[10\]
+
+
+
+=== Reference
+
+\[1\] Xu, T., Li, Z., and Yu, Y. Error Bounds of Imitating Policies and Environments. NeurIPS 2020.
+
+\[2\] Xu, T., Li, Z., and Yu, Y. Error Bounds of Imitating Policies and Environments for Reinforcement Learning. TPAMI 2021.
+
+\[3\] Li, Z., Xu, T., Yu, Y., and Luo, Z.-Q. Rethinking ValueDice: Does It Really Improve Performance? ICLR 2021.
+
+\[4\] Xu, T., Li, Z., Yu, Y., and Luo, Z.-Q. Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis. arXiv:2208.01899.
+
+\[5\] Xu, T., Li, Z., and Yu, Y. More efficient adversarial imitation learning algorithms with known and unknown transitions. arXiv, 2106.10424.
+
+\[6\] Li, Z., Xu, T., Yu, Y., and Luo, Z.-Q. Theoretical Analysis of Offline Imitation With Supplementary Dataset. arXiv:2301.11687.
+
+\[7\] Li, Z., and Chen, X.-H. Efficient Exploration by Novelty-Pursuit. DAI 2020.
+
+\[8\] Li, Z., Li, Y., Zhang, Y., Zhang, T., and Luo, Z.-Q. HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning. ICLR 2022.
+
+\[9\] Li, Z., Xu, T., and Yu, Y. A Note on Target Q-learning For Solving Finite MDPs with A Generative Oracle. arXiv:2203.11489.
+
+\[10\] Liu, F.-Y., Li, Z., and Qian, C. Self-Guided Evolution Strategies with Historical Estimated Gradients. IJCAI 2020.
