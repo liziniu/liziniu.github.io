@@ -31,7 +31,7 @@ Feel free to contact me if you want to discuss some ideas.
 - [https://arxiv.org/abs/2301.11687 Theoretical Analysis of Offline Imitation With Supplementary Dataset] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
   arXiv:2301.11687 \n
-  (This work explores the framework of transfer learning (or domain adaption) used in CV, NLP, and RL, \n in terms of data coverage, importance sampling (or re-weighting), and feature alignment, \n answering questions including what kind of source data is helpful? when can the importance sampling improve a lot?)
+  (This work explores an emerging framework of supplementing expert data using an additional sub-optimal dataset, \n providing a data-centric solution to offline imitation learning)
 
 
 - [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
@@ -50,23 +50,23 @@ Feel free to contact me if you want to discuss some ideas.
 
 ==== Reviewer
 
-NeurIPS'2022 ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), ICML'2022 ([https://icml.cc/Conferences/2022/Reviewers Outstanding Reviewer]), ICLR'2022 ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Reviewer]), DAI'2020.
+NeurIPS ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), ICML ([https://icml.cc/Conferences/2022/Reviewers Outstanding Reviewer]), ICLR ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Reviewer]).
 
 ==== Teaching Assistant
 
-- CSC4120: Design and Analysis of Algorithms. 2022 Fall, CUHKSZ.
+- DDA6111: Discrete Optimization. 2022 Spring @ CUHKSZ
 
-- DDA6111: Discrete Optimization. 2022 Spring, CUHKSZ.
+- DDA6060: Machine Learning. 2023 Spring @ CUHKSZ
 
-- CSC4120: Design and Analysis of Algorithms. 2021 Fall, CUHKSZ.
+- FTE4560: Basic Machine Learning. 2021 Spring @ CUHKSZ.
 
-- FTE4560: Basic Machine Learning. 2021 Spring, CUHKSZ.
+- CSC4120: Design and Analysis of Algorithms. 2022 Fall, 2021 Fall @ CUHKSZ
 
-- MAT3007: Introduction to Optimization. 2020 Fall, CUHKSZ.
+- MAT3007: Introduction to Optimization. 2020 Fall @ CUHKSZ
 
 ==== Lecturer
 
-- Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX.
+- Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX
 
 == Award
 
