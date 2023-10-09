@@ -8,80 +8,105 @@
 
 === 2023
 
-- [https://arxiv.org/abs/2306.06563 Provably Efficient Adversarial Imitation Learning with Unknown Transitions] \n
+~~~
+  [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
+  *Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n
+  In Neural Information Processing System (NeurIPS) 37, 2023 \n
+  (This paper is selected as an *spotlight* presentation, with an early version at arXiv:2301.11687)
+~~~
+
+~~~
+  [https://arxiv.org/abs/2306.06563 Provably Efficient Adversarial Imitation Learning with Unknown Transitions] \n
   Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   The 39th Conference on Uncertainty in Artificial Intelligence (UAI), 2023 \n
   (This paper is selected as an *oral* presentation, with an early version at arXiv:2106.10424v2)
+~~~
 
-
-- Sensing Jamming Strategy from Limited Observations: An Imitation Learning Perspective \n
+~~~
+  Sensing Jamming Strategy from Limited Observations: An Imitation Learning Perspective \n
   Youlin Fan, Bo Jiu, Wenqiang Pu, *Ziniu Li*, Kang Li, Hongwei Liu \n
   Submitted to IEEE Transactions on Signal Processing
+~~~
 
-
-
-- [https://arxiv.org/abs/2303.07046 Deploying Offline Reinforcement Learning with Human Feedback] \n
+~~~
+  [https://arxiv.org/abs/2303.07046 Deploying Offline Reinforcement Learning with Human Feedback] \n
   *Ziniu Li*, Ke Xu, Liu Liu, Lanqing Li, Deheng Ye, Peilin Zhao \n
   arXiv:2303.07046 \n
+~~~
 
-
-- [https://arxiv.org/abs/2301.11687 Theoretical Analysis of Offline Imitation With Supplementary Dataset] \n
-  *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
-  arXiv:2301.11687 \n
 
 === 2022
 
-- [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
+~~~
+  [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
   Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
   arXiv:2208.01899 \n
   (The early version of this work is at arXiv:2106.10424v3)
+~~~
 
-
-- [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
+~~~
+  [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
   The 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
+~~~
 
-- [https://arxiv.org/abs/2203.11489 A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle] \n
+~~~
+  [https://arxiv.org/abs/2203.11489 A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle] \n
   *Ziniu Li\**, Tian Xu\*, Yang Yu \n
   arXiv:2203.11489
+~~~
 
-- [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
+~~~
+  [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
   *Ziniu Li*, Yingru Li, Yushun Zhang, Tong Zhang, Zhi-Quan Luo \n
   The 10th International Conference on Learning Representations (ICLR), 2022 \n
   (This work is selected as an *oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
-
+~~~
 
 === 2021
 
-- [http://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf A Concise Introduction to Imitation Learning] (In Chinese) \n
+~~~
+  [http://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf A Concise Introduction to Imitation Learning] (In Chinese) \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
+  Online Available
+~~~
 
-
-- [https://ieeexplore.ieee.org/document/9485061 Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
+~~~
+  [https://ieeexplore.ieee.org/document/9485061 Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
   IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021
+~~~
 
 === 2020
 
-- [https://arxiv.org/abs/2010.11876 Error Bounds of Imitating Policies and Environments] \n
+~~~
+  [https://arxiv.org/abs/2010.11876 Error Bounds of Imitating Policies and Environments] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
-  Advances in Neural Information Processing Systems 33 (NeurIPS), 2020.
+  Advances in Neural Information Processing Systems 34 (NeurIPS), 2020.
+~~~
 
-- [https://dl.acm.org/doi/abs/10.1007/978-3-030-64096-5_7 Efficient Exploration by Novelty-pursuit] \n
+~~~
+  [https://dl.acm.org/doi/abs/10.1007/978-3-030-64096-5_7 Efficient Exploration by Novelty-pursuit] \n
   *Ziniu Li\**, Xiong-Hui Chen\* \n
   The 2nd International Conference on Distributed Artificial Intelligence (DAI), 2020
+~~~
 
-- [https://www.ijcai.org/proceedings/2020/205 Self-Guided Evolution Strategies with Historical Estimated Gradients] \n
+~~~
+  [https://www.ijcai.org/proceedings/2020/205 Self-Guided Evolution Strategies with Historical Estimated Gradients] \n
   Fei-yu Liu, *Ziniu Li*, Chao Qian \n
   The 29th International Conference on Joint Artificial Intelligence (IJCAI), 2020
+~~~
 
-- [https://ieeexplore.ieee.org/document/9057612/ Solving The Inverse Design Problem of Electrical Fuse with Machine Learning] \n
+~~~
+  [https://ieeexplore.ieee.org/document/9057612/ Solving The Inverse Design Problem of Electrical Fuse with Machine Learning] \n
   Xinjian Huang, *Ziniu Li*, Zhiyuan Liu, Bin Xiang, Yingsan Geng, Jianhua Wang \n
   IEEE Access, 8, 74137-74144, 2020
+~~~
 
 === 2019
 
-- [https://arxiv.org/abs/1911.07027 On Value Discrepancy of Imitation Learning] \n
+~~~
+  [https://arxiv.org/abs/1911.07027 On Value Discrepancy of Imitation Learning] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
   arXiv:1911.07027
-
+~~~

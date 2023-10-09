@@ -10,7 +10,7 @@ My research focuses on machine learning applications and aims to design effectiv
 
 === Imitation Learning
 
-
+~~~
 Background: Imitation learning trains good policies from expert/human demonstrations, with applications in autonomous driving, robotics, etc. \n
    Many algorithms, such as behavioral cloning (BC) and adversarial imitation learning (AIL), have been developed. \n
    However, the theoretical foundation remains under-developed: which algorithm performs better? in what scenario?
@@ -25,11 +25,12 @@ Contribution:
 
  - An efficient algorithm to address the interaction efficiency of online AIL methods.\[5\]
 
- - A theoretical analysis of imitation learning with supplementary dataset.\[6\]
+ - Theoretical justifications and algorithms in selecting effective data for imitation learning.\[6\]
+~~~
 
 === Reinforcement Learning
 
-
+~~~
 General Background: Reinforcement learning (RL) refers to a class of algorithms that solve long-term decision-making problems. \n
     My research covers many aspects of RL, which will be explained below.
 
@@ -60,7 +61,7 @@ Contribution:
 - A theoretical verification of target Q-learning, an algorithm that is widely used in practice, in the tabular setting.\[9\]
 
 - A heuristic-guided black-box optimization algorithm for deep RL (and other derivative-free problems).\[10\]
-
+~~~
 
 
 === Reference
@@ -75,7 +76,7 @@ Contribution:
 
 \[5\] Xu, T., Li, Z., Yu, Y., and Luo, Z.-Q. Provably Efficient Adversarial Imitation Learning with Unknown Transitions. UAI 2023.
 
-\[6\] Li, Z., Xu, T., Yu, Y., and Luo, Z.-Q. Theoretical Analysis of Offline Imitation With Supplementary Dataset. arXiv:2301.11687.
+\[6\] Li, Z., Xu, T., Qin, Z., Yu, Y., and Luo, Z.-Q. Data Selection in Imitation Learning: Theoretical Justifications and Algorithms. NeurIPS 2023.
 
 \[7\] Li, Z., and Chen, X.-H. Efficient Exploration by Novelty-Pursuit. DAI 2020.
 
