@@ -29,9 +29,18 @@ Feel free to contact me if you want to discuss some ideas.
 *: indicating equal contribution or alphabetic ordering.
 
 ~~~
+  [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
+  *Ziniu Li*, Tian Xu, Yushun Zhang, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
+  arXiv:2310.10505 \n
+
+  TL;DR: /This work develops an RL method called ReMax, which is more simple (6 lines of code) and efficient (less memory and fast training) than PPO when used in RLHF /
+~~~
+
+
+~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
   *Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n
-  *Spotlight* Presentation (acceptance rate < 3\%), In Neural Information Processing System (NeurIPS) 37, 2023 \n
+  *Spotlight* Presentation (acceptance rate < 5\%), In Neural Information Processing System (NeurIPS) 37, 2023 \n
 
   TL;DR: /This work validates that importance sampling is effective in data selection when leveraging multiple imperfect (out-of-distribution and low-quality) data sources/
 ~~~
