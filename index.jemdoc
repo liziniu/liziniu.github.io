@@ -30,7 +30,7 @@ Feel free to contact me if you want to discuss some ideas.
 
 ~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
-  *Ziniu Li*, Tian Xu, Yushun Zhang, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
+  *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
   arXiv:2310.10505 \n
 
   TL;DR: /This work develops an RL method called ReMax, which is more simple (6 lines of code) and efficient (less memory and fast training) than PPO when used in RLHF /

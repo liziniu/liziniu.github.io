@@ -9,8 +9,14 @@
 === 2023
 
 ~~~
+  [https://arxiv.org/abs/2312.10584 Policy Optimization in RLHF: The Impact of Out-of-preference Data] \n
+  *Ziniu Li\**, Tian Xu*, Yushun Zhang, Yang Yu \n
+  arXiv:2312.10584 \n
+~~~
+
+~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
-  *Ziniu Li*, Tian Xu, Yushun Zhang, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
+  *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
   arXiv:2310.10505 \n
 ~~~
 
