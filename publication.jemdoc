@@ -6,13 +6,26 @@
 
 [https://scholar.google.com/citations?user=80UnKQQAAAAJ&hl=en Google Scholar].
 
-=== 2023
+
+=== 2024
+
+
+~~~
+  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
+  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
+  arXiv:2402.16788 \n
+~~~
 
 ~~~
   [https://arxiv.org/abs/2312.10584 Policy Optimization in RLHF: The Impact of Out-of-preference Data] \n
   *Ziniu Li\**, Tian Xu*, Yang Yu \n
-  arXiv:2312.10584 \n
+  The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
+  (A full version of this paper is at arXiv:2312.10584v2)
 ~~~
+
+
+=== 2023
+
 
 ~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n

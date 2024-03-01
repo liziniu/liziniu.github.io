@@ -24,9 +24,19 @@ My curriculum vitae can be downloaded from [docs/CV_Ziniu_Li.pdf here].
 
 Feel free to contact me if you want to discuss some ideas.
 
-== Selected Work
+== Recent Highlights
 
 *: indicating equal contribution or alphabetic ordering.
+
+
+~~~
+  [https://arxiv.org/abs/2312.10584 Policy Optimization in RLHF: The Impact of Out-of-preference Data] \n
+  *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
+  The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
+
+  TL;DR: /This work analyzes policy optimization errors in RLHF and shows that out-of-preference data is important for RL algorithms such as PPO and ReMax /
+~~~
+
 
 ~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
@@ -61,14 +71,6 @@ Feel free to contact me if you want to discuss some ideas.
   TL;DR: /This work presents the first horizon-free sample complexity bound of adversarial imitation learning (AIL), providing an answer to the open question --why does AIL outperform BC by a wide margin, particularly in the low data regime ? (raised in CoRL 2019 best paper by Ghasemipour et al.)/
 ~~~
 
-~~~
-  [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
-  *Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n
-  Top-reviewed Paper, The 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
-
-  TL;DR: /This work presents the first reduction of offline AIL to BC through a new DP-based analysis, proving that AIL is no better than BC in the offline setting and verifying this by experiments/
-~~~
-
 == Service
 
 ==== Reviewer
@@ -93,4 +95,8 @@ NeurIPS ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), I
 
 == Award
 
-- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data.
+- \[2024-01\] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 RMB
+
+- \[2023-12\] Guotaijunan Scholarship. $20,000 RMB
+
+- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 RMB
