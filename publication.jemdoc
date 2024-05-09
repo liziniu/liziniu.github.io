@@ -11,27 +11,29 @@
 
 
 ~~~
+  [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
+  *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
+  The 41st International Conference on Machine Learning (ICML), 2024
+  (The early version of this work is at arXiv:2310.10505)
+~~~
+
+
+~~~
   [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
   Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
   arXiv:2402.16788 \n
 ~~~
 
 ~~~
-  [https://arxiv.org/abs/2312.10584 Policy Optimization in RLHF: The Impact of Out-of-preference Data] \n
-  *Ziniu Li\**, Tian Xu*, Yang Yu \n
+  [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] \n
+  *Ziniu Li\**, Tian Xu\*, Yang Yu \n
   The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
-  (A full version of this paper is at arXiv:2312.10584v2)
+  (This paper is selected as an *oral* presentation, with an early version at arXiv:2312.10584)
 ~~~
 
 
 === 2023
 
-
-~~~
-  [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
-  *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv:2310.10505 \n
-~~~
 
 ~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n

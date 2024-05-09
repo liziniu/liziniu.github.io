@@ -30,21 +30,22 @@ Feel free to contact me if you want to discuss some ideas.
 
 
 ~~~
-  [https://arxiv.org/abs/2312.10584 Policy Optimization in RLHF: The Impact of Out-of-preference Data] \n
-  *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
-  The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
-
-  TL;DR: /This work analyzes policy optimization errors in RLHF and shows that out-of-preference data is important for RL algorithms such as PPO and ReMax /
-~~~
-
-
-~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv:2310.10505 \n
+  The 41st International Conference on Machine Learning (ICML), 2024  \n
 
-  TL;DR: /This work develops an RL method called ReMax, which is more simple (6 lines of code) and efficient (less memory and fast training) than PPO when used in RLHF /
+  TL;DR: /This work develops an RL method called ReMax for RLHF in LLMs, which is simple (6 lines of code) and efficient (less memory and fast training) /
 ~~~
+
+
+~~~
+  [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] \n
+  *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
+  *Oral* Presentation, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
+
+  TL;DR: /This work analyzes the reward modeling quality in view of representations, and analyzed the optimization error sources /
+~~~
+
 
 
 ~~~
@@ -95,8 +96,8 @@ NeurIPS ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), I
 
 == Award
 
-- \[2024-01\] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 RMB
+- \[2024-01\] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY
 
-- \[2023-12\] Guotaijunan Scholarship. $20,000 RMB
+- \[2023-12\] Guo-Tai-Jun-An Scholarship. $20,000 CNY
 
-- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 RMB
+- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY
