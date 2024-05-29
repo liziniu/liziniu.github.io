@@ -11,17 +11,17 @@
 
 
 ~~~
+  [https://arxiv.org/abs/2405.16455 On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization] \n
+  Jiancong Xiao, *Ziniu Li*, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su \n
+  arXiv:2405.16455 \n
+~~~
+
+
+~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
-  The 41st International Conference on Machine Learning (ICML), 2024
+  The 41st International Conference on Machine Learning (ICML), 2024 \n
   (The early version of this work is at arXiv:2310.10505)
-~~~
-
-
-~~~
-  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
-  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv:2402.16788 \n
 ~~~
 
 ~~~
@@ -29,6 +29,13 @@
   *Ziniu Li\**, Tian Xu\*, Yang Yu \n
   The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
   (This paper is selected as an *oral* presentation, with an early version at arXiv:2312.10584)
+~~~
+
+
+~~~
+  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
+  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
+  arXiv:2402.16788 \n
 ~~~
 
 

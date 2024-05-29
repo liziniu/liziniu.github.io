@@ -30,6 +30,15 @@ Feel free to contact me if you want to discuss some ideas.
 
 
 ~~~
+  [https://arxiv.org/abs/2405.16455 On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization] \n
+  Jiancong Xiao, *Ziniu Li*, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su \n
+  arXiv:2405.16455 \n
+
+  TL;DR: /This work identifies the preference collapse in RLHF and addresses this issue by a matching regularization /
+~~~
+
+
+~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
   The 41st International Conference on Machine Learning (ICML), 2024  \n
@@ -47,6 +56,12 @@ Feel free to contact me if you want to discuss some ideas.
 ~~~
 
 
+~~~
+  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
+  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
+  arXiv:2402.16788 \n
+  TL;DR: /This work studies the Hessian spectrum of LLMs and points out that the heterogeneity is the key for adaptive learning rates in Adam /
+~~~
 
 ~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
@@ -56,21 +71,7 @@ Feel free to contact me if you want to discuss some ideas.
   TL;DR: /This work validates that importance sampling is effective in data selection when leveraging multiple imperfect (out-of-distribution and low-quality) data sources/
 ~~~
 
-~~~
-  [https://arxiv.org/abs/2306.06563 Provably Efficient Adversarial Imitation Learning with Unknown Transitions] \n
-  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
-  *Oral* Presentation (acceptance rate < 3\%), The 39th Conference on Uncertainty in Artificial Intelligence (UAI), 2023 \n
 
-  TL;DR: /This work addresses the online sample efficiency issue of adversarial imitation learning by bridging it with reward-free exploration/
-~~~
-
-~~~
-  [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] \n
-  Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n
-  arXiv:2208.01899 \n
-
-  TL;DR: /This work presents the first horizon-free sample complexity bound of adversarial imitation learning (AIL), providing an answer to the open question --why does AIL outperform BC by a wide margin, particularly in the low data regime ? (raised in CoRL 2019 best paper by Ghasemipour et al.)/
-~~~
 
 == Service
 
