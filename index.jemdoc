@@ -30,23 +30,11 @@ Feel free to contact me if you want to discuss some ideas.
 
 
 ~~~
-  [https://arxiv.org/abs/2406.16793 Adam-mini: Use Fewer Learning Rates To Gain More] \n
-   Yushun Zhang, Congliang Chen, *Ziniu Li*, Tian Ding, Chenwei Wu, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun \n
-  arXiv:2406.16793 \n
-
-  TL;DR: /This work develops a mini-version of Adam, which cuts down >90% learning rates in Adam based on Hessian structure of LLMs. /
+  [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] \n
+   *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
+  arXiv: 2408.16673 \n
+  TL;DR: /This work develops a training method for supervised fine-tuning of LLMs, mitigating the overfitting and distribution collapse issues. /
 ~~~
-
-
-
-~~~
-  [https://arxiv.org/abs/2405.16455 On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization] \n
-  Jiancong Xiao, *Ziniu Li*, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su \n
-  arXiv:2405.16455 \n
-
-  TL;DR: /This work identifies the preference collapse in RLHF and addresses this issue by a matching regularization /
-~~~
-
 
 ~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
@@ -65,13 +53,6 @@ Feel free to contact me if you want to discuss some ideas.
   TL;DR: /This work analyzes the reward modeling quality in view of representations, and analyzed the optimization error sources /
 ~~~
 
-
-~~~
-  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
-  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv:2402.16788 \n
-  TL;DR: /This work studies the Hessian spectrum of LLMs and points out that the heterogeneity is the key for adaptive learning rates in Adam /
-~~~
 
 ~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
