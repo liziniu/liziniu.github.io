@@ -10,6 +10,18 @@
 === 2024
 
 ~~~
+  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
+  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
+  Conference on Neural Information Processing System (NeurIPS) 38, 2024 \n
+~~~
+
+~~~
+  Unlocking Black-Box Prompt Tuning Efficiency via Zeroth-Order Optimization \n
+  Hesehn Zhan, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun \n
+  The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP) (Findings), 2024 \n
+~~~
+
+~~~
   [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] \n
    *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
   arXiv: 2408.16673 \n
@@ -26,7 +38,12 @@
   [https://arxiv.org/abs/2406.16793 Adam-mini: Use Fewer Learning Rates To Gain More] \n
    Yushun Zhang, Congliang Chen, *Ziniu Li*, Tian Ding, Chenwei Wu, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun \n
   arXiv:2406.16793 \n
+~~~
 
+~~~
+  [https://arxiv.org/abs/2405.17039 BWArea Model: Learning World Model, Inverse Dynamics, and Policy for Controllable Language Generation] \n
+  Chengxing Jia, Pengyuan Wang, *Ziniu Li*, Yi-Chen Li, Zhilong Zhang, Nan Tang, Yang Yu \n
+  arXiv:2405.17039 \n
 ~~~
 
 
@@ -52,12 +69,6 @@
 ~~~
 
 
-~~~
-  [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] \n
-  Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv:2402.16788 \n
-~~~
-
 
 === 2023
 
@@ -65,7 +76,7 @@
 ~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
   *Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n
-  In Neural Information Processing System (NeurIPS) 37, 2023 \n
+  Conference onNeural Information Processing System (NeurIPS) 37, 2023 \n
   (This paper is selected as an *spotlight* presentation, with an early version at arXiv:2301.11687)
 ~~~
 
@@ -130,7 +141,7 @@
 ~~~
   [https://arxiv.org/abs/2010.11876 Error Bounds of Imitating Policies and Environments] \n
   Tian Xu, *Ziniu Li*, Yang Yu \n
-  Advances in Neural Information Processing Systems 34 (NeurIPS), 2020.
+  Conference on Neural Information Processing Systems 34 (NeurIPS), 2020.
 ~~~
 
 ~~~
