@@ -1,0 +1,235 @@
+# jemdoc: menu{MENU}{publication.html}, nofooter
+
+== Publication
+
+*: indicating equal contribution or alphabetic ordering.
+
+[https://scholar.google.com/citations?user=80UnKQQAAAAJ&hl=en Google Scholar].
+
+
+=== Selective Publications
+
+~~~
+{}{img_left}{images/publication/2024_gem.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] 
+*Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n\n
+arXiv: 2408.16673 \n
+(*Oral* presentation at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability)
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_remax.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] 
+*Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n\n
+The 41st International Conference on Machine Learning (ICML), 2024 \n
+(The early version of this work is at arXiv:2310.10505)
+~~~
+
+
+~~~
+{}{img_left}{images/publication/2023_selection.png}{alt text}{180}{120}{}  
+==== [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] 
+*Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n\n
+Conference onNeural Information Processing System (NeurIPS) 37, 2023 \n 
+(*Spotlight* presentation, with an early version at arXiv:2301.11687)
+~~~
+
+~~~
+{}{img_left}{images/publication/2022_hyperdqn.png}{alt text}{180}{120}{}
+==== [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
+*Ziniu Li*, Yingru Li, Yushun Zhang, Tong Zhang, Zhi-Quan Luo \n\n
+The 10th International Conference on Learning Representations (ICLR), 2022 \n
+(*Oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
+~~~
+
+~~~
+{}{img_left}{images/publication/2021_error.png}{alt text}{180}{120}{}
+==== [https://ieeexplore.ieee.org/document/9485061 Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
+Tian Xu, *Ziniu Li*, Yang Yu \n\n
+IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021
+~~~
+
+
+=== 2024
+
+~~~
+{}{img_left}{images/publication/2024_hallucination.png}{alt text}{180}{120}{}
+==== [https://openreview.net/pdf?id=kX2EqGUp5B Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention] 
+Tianyun Yang, *Ziniu Li*, Juan Cao, Chang Xu \n\n
+NeurIPS Workshop on Adaptive Foundation Models, 2024 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_pruning.png}{alt text}{180}{120}{}
+==== [https://openreview.net/pdf?id=jD1eWpUMOf Pruning for Robust Concept Erasing in Diffusion Models] 
+Tianyun Yang, *Ziniu Li*, Juan Cao, Chang Xu \n\n
+NeurIPS Workshop on Safe Generative AI, 2024 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_why_adam.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2402.16788 Why Transformers Need Adam: A Hessian Perspective] 
+Yushun Zhang, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun, Zhi-Quan Luo \n\n
+Conference on Neural Information Processing System (NeurIPS) 38, 2024 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_zot.png}{alt text}{180}{120}{}
+==== [https://aclanthology.org/2024.findings-emnlp.871.pdf Unlocking Black-Box Prompt Tuning Efficiency via Zeroth-Order Optimization] 
+Heshen Zhan, Congliang Chen, Tian Ding, *Ziniu Li*, Ruoyu Sun \n\n
+The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP) (Findings), 2024 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_gem.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] 
+*Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n\n
+arXiv: 2408.16673 \n
+(*Oral* presentation at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability)
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_radar.png}{alt text}{180}{120}{}
+==== [https://ieeexplore.ieee.org/document/10634527  Sensing Jamming Strategy from Limited Observations: An Imitation Learning Perspective] 
+Youlin Fan, Bo Jiu, Wenqiang Pu, *Ziniu Li*, Kang Li, Hongwei Liu \n\n
+IEEE Transactions on Signal Processing (TSP)
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_adam_mini.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2406.16793 Adam-mini: Use Fewer Learning Rates To Gain More] 
+Yushun Zhang, Congliang Chen, *Ziniu Li*, Tian Ding, Chenwei Wu, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun \n\n
+arXiv:2406.16793 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_bwarea.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2405.17039 BWArea Model: Learning World Model, Inverse Dynamics, and Policy for Controllable Language Generation] 
+Chengxing Jia, Pengyuan Wang, *Ziniu Li*, Yi-Chen Li, Zhilong Zhang, Nan Tang, Yang Yu \n\n
+arXiv:2405.17039 \n 
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_preference.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2405.16455 On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization] 
+Jiancong Xiao, *Ziniu Li*, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su \n\n
+arXiv:2405.16455 \n
+~~~
+
+
+~~~
+{}{img_left}{images/publication/2024_remax.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] 
+*Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n\n
+The 41st International Conference on Machine Learning (ICML), 2024 \n
+(The early version of this work is at arXiv:2310.10505)
+~~~
+
+~~~
+{}{img_left}{images/publication/2024_dpo.png}{alt text}{180}{120}{}
+==== [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] 
+*Ziniu Li\**, Tian Xu\*, Yang Yu \n\n
+The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
+(*Oral* presentation, with an early version at arXiv:2312.10584)
+~~~
+
+
+
+=== 2023
+
+
+~~~
+{}{img_left}{images/publication/2023_selection.png}{alt text}{180}{120}{}  
+==== [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] 
+*Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n\n
+Conference onNeural Information Processing System (NeurIPS) 37, 2023 \n 
+(*Spotlight* presentation, with an early version at arXiv:2301.11687)
+~~~
+
+~~~
+{}{img_left}{images/publication/2023_ail.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2306.06563 Provably Efficient Adversarial Imitation Learning with Unknown Transitions] 
+Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n\n
+The 39th Conference on Uncertainty in Artificial Intelligence (UAI), 2023 \n
+(*Oral* presentation, with an early version at arXiv:2106.10424v2)
+~~~
+
+~~~
+{}{img_left}{images/publication/2023_expert.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2303.07046 Deploying Offline Reinforcement Learning with Human Feedback] 
+*Ziniu Li*, Ke Xu, Liu Liu, Lanqing Li, Deheng Ye, Peilin Zhao \n\n
+arXiv:2303.07046 \n
+~~~
+
+
+=== 2022
+
+~~~
+{}{img_left}{images/publication/2022_understanding.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2208.01899 Understanding Adversarial Imitation Learning in Small Sample Regime: A Stage-coupled Analysis] 
+Tian Xu\*, *Ziniu Li\* *, Yang Yu, Zhi-Quan Luo \n\n
+arXiv:2208.01899 \n
+(The early version of this work is at arXiv:2106.10424v3)
+~~~
+
+~~~
+{}{img_left}{images/publication/2022_valuedice.png}{alt text}{180}{120}{}
+==== [https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice/ Rethinking ValueDice: Does It Really Improve Performance?] \n
+*Ziniu Li\* *, Tian Xu\*, Yang Yu, Zhi-Quan Luo \n\n
+The 10th International Conference on Learning Representations (ICLR) (Blog Track), 2022 \n
+~~~
+
+~~~
+{}{img_left}{images/publication/2022_qlearning.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2203.11489 A Note on Target Q-learning for Solving Finite MDPs with A Generative Oracle] \n
+*Ziniu Li\**, Tian Xu\*, Yang Yu \n\n
+arXiv:2203.11489
+~~~
+
+~~~
+{}{img_left}{images/publication/2022_hyperdqn.png}{alt text}{180}{120}{}
+==== [https://openreview.net/forum?id=X0nrKAXu7g- HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning] \n
+*Ziniu Li*, Yingru Li, Yushun Zhang, Tong Zhang, Zhi-Quan Luo \n\n
+The 10th International Conference on Learning Representations (ICLR), 2022 \n
+(*Oral* presentation at Workshop on Ecological Theory of Reinforcement Learning at NeurIPS, 2021)
+~~~
+
+=== 2021
+
+~~~
+{}{img_left}{images/publication/2021_imitation.png}{alt text}{180}{120}{}
+==== [http://www.lamda.nju.edu.cn/xut/Imitation_Learning.pdf A Concise Introduction to Imitation Learning] (In Chinese) \n
+Tian Xu, *Ziniu Li*, Yang Yu \n\n
+Online Available
+~~~
+
+~~~
+{}{img_left}{images/publication/2021_error.png}{alt text}{180}{120}{}
+==== [https://ieeexplore.ieee.org/document/9485061 Error Bounds of Imitating Policies and Environments for Reinforcement Learning] \n
+Tian Xu, *Ziniu Li*, Yang Yu \n\n
+IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021
+~~~
+
+=== 2020
+
+~~~
+{}{img_left}{images/publication/2020_error.png}{alt text}{180}{120}{}
+==== [https://arxiv.org/abs/2010.11876 Error Bounds of Imitating Policies and Environments] \n
+Tian Xu, *Ziniu Li*, Yang Yu \n\n
+Conference on Neural Information Processing Systems 34 (NeurIPS), 2020.
+~~~
+
+~~~
+{}{img_left}{images/publication/2020_novelty.png}{alt text}{180}{120}{}
+==== [docs/dai2020_paper.pdf Efficient Exploration by Novelty-pursuit] \n
+*Ziniu Li\**, Xiong-Hui Chen\* \n\n
+The 2nd International Conference on Distributed Artificial Intelligence (DAI), 2020
+~~~
+
+~~~
+{}{img_left}{images/publication/2020_sges.png}{alt text}{180}{120}{}
+==== [https://www.ijcai.org/proceedings/2020/205 Self-Guided Evolution Strategies with Historical Estimated Gradients] \n
+Fei-yu Liu, *Ziniu Li*, Chao Qian \n\n
+The 29th International Conference on Joint Artificial Intelligence (IJCAI), 2020
+~~~
+

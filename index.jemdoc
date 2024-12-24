@@ -22,6 +22,16 @@ I have worked/interned at Tencent, Nanjing University, Cardinal Operations, etc.
 
 Feel free to contact me if you want to discuss some ideas.
 
+== Research Statement
+
+My research focuses on designing /adaptive/ and /scalable/ ML algorithms and analyzing their theoretical guarantees.
+
+In the field of large language models, my work spans several key areas: data selection ([https://openreview.net/forum?id=vO04AzsB49 NeurIPS 2023, Spotlight]), diversity-preserving supervised fine-tuning ([https://arxiv.org/abs/2408.16673 NeurIPS 2024 FITML Workshop, Oral]), computationally efficient RLHF ([https://arxiv.org/abs/2310.10505 ICML 2024]), and hallucination mitigation ([https://openreview.net/pdf?id=kX2EqGUp5B NeurIPS 2024 AFM Workshop]).
+
+In the field of imitation learning, I am interested in the theory of sample complexity ([https://arxiv.org/abs/2010.11876 NeurIPS 2020], [https://ieeexplore.ieee.org/document/9485061 TPAMI 2021], [https://arxiv.org/abs/2306.06563 UAI 2023, Oral]), as well as applications in robotics ([https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice ICLR 2024 Blog]) and signal processing ([https://ieeexplore.ieee.org/document/10634527 TSP 2024]).
+
+I also work on optimization-centric topics with other researchers, including understanding Adam in training Transformers ([https://arxiv.org/abs/2402.16788 NeurIPS 2024]), memory-efficient optimizers ([https://arxiv.org/abs/2406.16793 ICML 2024 ES-FoMo Workshop]), zero-order optimization ([https://www.ijcai.org/proceedings/2020/205 IJCAI 2020]), and prompt-tuning ([https://aclanthology.org/2024.findings-emnlp.871.pdf EMNLP 2024]). 
+
 == Recent Highlights
 
 *: indicating equal contribution or alphabetic ordering.
@@ -30,8 +40,8 @@ Feel free to contact me if you want to discuss some ideas.
 ~~~
   [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] \n
    *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
-  arXiv: 2408.16673 \n
-  TL;DR: /This work develops a training method for supervised fine-tuning of LLMs, mitigating the overfitting and distribution collapse issues. /
+  *Oral* Presentation (acceptance rate < 5\%), NeurIPS 2024 FITML Workshop \n
+  TL;DR: /This work introduces a game-theoretic distribution matching method to address the diversity-reducing and knowledge-forgetting issues in SFT /
 ~~~
 
 ~~~
@@ -39,16 +49,15 @@ Feel free to contact me if you want to discuss some ideas.
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
   The 41st International Conference on Machine Learning (ICML), 2024  \n
 
-  TL;DR: /This work develops an RL method called ReMax for RLHF in LLMs, which is simple (6 lines of code) and efficient (less memory and fast training) /
+  TL;DR: /This work shows that PPO overshoots for RLHF in LLMs and introduces ReMax, which requires half the memory of PPO and runs twice as fast /
 ~~~
-
 
 ~~~
   [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
   *Oral* Presentation, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
 
-  TL;DR: /This work analyzes the reward modeling quality in view of representations, and analyzed the optimization error sources /
+  TL;DR: /This work analyzes the reward modeling quality in view of representations and the optimization error sources /
 ~~~
 
 
