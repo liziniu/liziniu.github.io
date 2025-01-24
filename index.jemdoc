@@ -24,13 +24,13 @@ Feel free to contact me if you want to discuss some ideas.
 
 == Research Statement
 
-My research focuses on designing /adaptive/ and /scalable/ ML algorithms and analyzing their theoretical guarantees.
+My research focuses on the algorithm design and theoretical analysis of machine learning models, particularly in reinforcement learning. Currently, I am primarily working on large language models to pursue the development of an agent capable of intelligent multi-task performance. My previous research outcomes are highlighted below:
 
-In the field of large language models, my work spans several key areas: data selection ([https://openreview.net/forum?id=vO04AzsB49 NeurIPS 2023, Spotlight]), diversity-preserving supervised fine-tuning ([https://arxiv.org/abs/2408.16673 NeurIPS 2024 FITML Workshop, Oral]), computationally efficient RLHF ([https://arxiv.org/abs/2310.10505 ICML 2024]), and hallucination mitigation ([https://openreview.net/pdf?id=kX2EqGUp5B NeurIPS 2024 AFM Workshop]).
+In the field of large language models, my work spans several key areas: data selection ([https://openreview.net/forum?id=vO04AzsB49 NeurIPS 2023, Spotlight]), diversity-preserving supervised fine-tuning ([https://arxiv.org/abs/2408.16673 ICLR 2025]), computationally efficient RLHF ([https://arxiv.org/abs/2310.10505 ICML 2024]), and hallucination mitigation ([https://openreview.net/pdf?id=kX2EqGUp5B ICLR 2025]).
 
-In the field of imitation learning, I am interested in the theory of sample complexity ([https://arxiv.org/abs/2010.11876 NeurIPS 2020], [https://ieeexplore.ieee.org/document/9485061 TPAMI 2021], [https://arxiv.org/abs/2306.06563 UAI 2023, Oral]), as well as applications in robotics ([https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice ICLR 2024 Blog]) and signal processing ([https://ieeexplore.ieee.org/document/10634527 TSP 2024]).
+In the field of imitation learning and reinforcement learning, I am interested in the theory of sample complexity ([https://arxiv.org/abs/2010.11876 NeurIPS 2020], [https://ieeexplore.ieee.org/document/9485061 TPAMI 2021], [https://arxiv.org/abs/2306.06563 UAI 2023, Oral]), as well as applications in robotics ([https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice ICLR 2024 Blog]) and signal processing ([https://ieeexplore.ieee.org/document/10634527 TSP 2024]).
 
-I also work on optimization-centric topics with other researchers, including understanding Adam in training Transformers ([https://arxiv.org/abs/2402.16788 NeurIPS 2024]), memory-efficient optimizers ([https://arxiv.org/abs/2406.16793 ICML 2024 ES-FoMo Workshop]), zero-order optimization ([https://www.ijcai.org/proceedings/2020/205 IJCAI 2020]), and prompt-tuning ([https://aclanthology.org/2024.findings-emnlp.871.pdf EMNLP 2024]). 
+I also work on optimization-centric topics with other researchers, including understanding Adam in training Transformers ([https://arxiv.org/abs/2402.16788 NeurIPS 2024]), memory-efficient optimizers ([https://arxiv.org/abs/2406.16793 ICLR 2025]), zero-order optimization ([https://www.ijcai.org/proceedings/2020/205 IJCAI 2020]), and prompt-tuning ([https://aclanthology.org/2024.findings-emnlp.871.pdf EMNLP 2024]). 
 
 == Recent Highlights
 
@@ -40,7 +40,8 @@ I also work on optimization-centric topics with other researchers, including und
 ~~~
   [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] \n
    *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
-  *Oral* Presentation (acceptance rate < 5\%), NeurIPS 2024 FITML Workshop \n
+  The 13th International Conference on Learning Representations (ICLR), 2025 \n
+  
   TL;DR: /This work introduces a game-theoretic distribution matching method to address the diversity-reducing and knowledge-forgetting issues in SFT /
 ~~~
 

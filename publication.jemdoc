@@ -64,6 +64,36 @@
 <div id="publications">
 
     <!-- 2025 Publications -->
+
+    <div class="pub-entry" data-year="2025.01" data-title="Adam-mini">
+        <img class="pub-img" src="images/publication/2024_adam_mini.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2406.16793">Adam-mini: Use Fewer Learning Rates To Gain More</a></h4>
+            <p>Yushun Zhang, Congliang Chen, <b>Ziniu Li</b>, Tian Ding, Chenwei Wu, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun</p>
+            <p>The 13th International Conference on Learning Representations (ICLR), 2025</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.01" data-title="Entropic Distribution">
+        <img class="pub-img" src="images/publication/2024_gem.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2408.16673">Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity</a></h4>
+            <p><b>Ziniu Li</b>, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo</p>
+            <p>The 13th International Conference on Learning Representations (ICLR), 2025</p>(<b>Oral</b> presentation at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning)</p>
+        </div>
+    </div>
+
+
+    <div class="pub-entry" data-year="2025.01" data-title="Mitigating Hallucination">
+        <img class="pub-img" src="images/publication/2024_hallucination.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://openreview.net/pdf?id=kX2EqGUp5B">Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention</a></h4>
+            <p>Tianyun Yang, <b>Ziniu Li</b>, Juan Cao, Chang Xu</p>
+            <p>The 13th International Conference on Learning Representations (ICLR), 2025</p>
+        </div>
+    </div>
+
+    <!-- 2025 Publications -->
     <div class="pub-entry" data-year="2025.01" data-title="Scalable Oversight via Critic">
         <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
         <div class="pub-content">
@@ -84,15 +114,6 @@
         </div>
     </div>
 
-    <div class="pub-entry" data-year="2024.12" data-title="Mitigating Hallucination">
-        <img class="pub-img" src="images/publication/2024_hallucination.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://openreview.net/pdf?id=kX2EqGUp5B">Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention</a></h4>
-            <p>Tianyun Yang, <b>Ziniu Li</b>, Juan Cao, Chang Xu</p>
-            <p>NeurIPS Workshop on Adaptive Foundation Models, 2024</p>
-        </div>
-    </div>
-
     <div class="pub-entry" data-year="2024.10" data-title="Unlocking Black-Box">
         <img class="pub-img" src="images/publication/2024_zot.png" alt="Publication Image">
         <div class="pub-content">
@@ -102,30 +123,12 @@
         </div>
     </div>
 
-    <div class="pub-entry" data-year="2024.08" data-title="Entropic Distribution">
-        <img class="pub-img" src="images/publication/2024_gem.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2408.16673">Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity</a></h4>
-            <p><b>Ziniu Li</b>, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo</p>
-            <p>arXiv: 2408.16673<br>(<b>Oral</b> presentation at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning)</p>
-        </div>
-    </div>
-
     <div class="pub-entry" data-year="2024.08" data-title="Sensing Jamming">
         <img class="pub-img" src="images/publication/2024_radar.png" alt="Publication Image">
         <div class="pub-content">
             <h4><a href="https://ieeexplore.ieee.org/document/10634527">Sensing Jamming Strategy from Limited Observations: An Imitation Learning Perspective</a></h4>
             <p>Youlin Fan, Bo Jiu, Wenqiang Pu, <b>Ziniu Li</b>, Kang Li, Hongwei Liu</p>
             <p>IEEE Transactions on Signal Processing (TSP)</p>
-        </div>
-    </div>
-
-    <div class="pub-entry" data-year="2024.06" data-title="Adam-mini">
-        <img class="pub-img" src="images/publication/2024_adam_mini.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2406.16793">Adam-mini: Use Fewer Learning Rates To Gain More</a></h4>
-            <p>Yushun Zhang, Congliang Chen, <b>Ziniu Li</b>, Tian Ding, Chenwei Wu, Yinyu Ye, Zhi-Quan Luo, Ruoyu Sun</p>
-            <p>arXiv:2406.16793</p>
         </div>
     </div>
 
