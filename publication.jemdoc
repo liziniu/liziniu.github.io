@@ -93,13 +93,21 @@
         </div>
     </div>
 
-    <!-- 2025 Publications -->
     <div class="pub-entry" data-year="2025.01" data-title="Scalable Oversight via Critic">
         <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
         <div class="pub-content">
             <h4><a href="https://arxiv.org/abs/2501.05727">Enabling Scalable Oversight via Self-Evolving Critic</a></h4>
             <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
             <p>arXiv:2501.05727</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.01" data-title="RealCritic: ">
+        <img class="pub-img" src="images/publication/2025_realcritic.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2501.14492">RealCritic: Towards Effectiveness-Driven Evaluation of Language Model Critiques</a></h4>
+            <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
+            <p>arXiv:2501.14492</p>
         </div>
     </div>
 
