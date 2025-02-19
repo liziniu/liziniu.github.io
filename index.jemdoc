@@ -38,9 +38,10 @@ I also work on optimization-centric topics with other researchers, including und
 
 
 ~~~
-  [https://arxiv.org/abs/2408.16673 Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity] \n
+  [https://openreview.net/forum?id=NQEe7B7bSw Preserving Diversity in Supervised Fine-tuning of Large Language Models] \n
    *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
-  The 13th International Conference on Learning Representations (ICLR), 2025 \n
+  (The 13th International Conference on Learning Representations (ICLR), 2025) \n
+  ({{<span style="color:red">Best Paper Runner-up</span>}} at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability)
   
   TL;DR: /This work introduces a game-theoretic distribution matching method to address the diversity-reducing and knowledge-forgetting issues in SFT /
 ~~~
@@ -48,7 +49,7 @@ I also work on optimization-centric topics with other researchers, including und
 ~~~
   [https://arxiv.org/abs/2310.10505 ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models] \n
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
-  The 41st International Conference on Machine Learning (ICML), 2024  \n
+  (The 41st International Conference on Machine Learning (ICML), 2024) 
 
   TL;DR: /This work shows that PPO overshoots for RLHF in LLMs and introduces ReMax, which requires half the memory of PPO and runs twice as fast /
 ~~~
@@ -56,7 +57,7 @@ I also work on optimization-centric topics with other researchers, including und
 ~~~
   [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] \n
   *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
-  *Oral* Presentation, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024 \n
+  ({{<span style="color:red">Oral Presentation</span>}}, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024)
 
   TL;DR: /This work analyzes the reward modeling quality in view of representations and the optimization error sources /
 ~~~
@@ -65,7 +66,7 @@ I also work on optimization-centric topics with other researchers, including und
 ~~~
   [https://openreview.net/forum?id=vO04AzsB49 Imitation Learning from Imperfection: Theoretical Justifications and Algorithms] \n
   *Ziniu Li\* *, Tian Xu\*, Zeyu Qin, Yang Yu, Zhi-Quan Luo \n
-  *Spotlight* Presentation (acceptance rate < 5\%), In Neural Information Processing System (NeurIPS) 37, 2023 \n
+  ({{<span style="color:red">Spotlight Presentation</span>}}, In Neural Information Processing System (NeurIPS) 37, 2023)
 
   TL;DR: /This work validates that importance sampling is effective in data selection when leveraging multiple imperfect (out-of-distribution and low-quality) data sources/
 ~~~
@@ -95,6 +96,8 @@ NeurIPS ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), I
 - Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX
 
 == Award
+
+- \[2024-12\] Best Paper Runner-up at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability
 
 - \[2024-01\] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY
 
