@@ -45,11 +45,43 @@
     float: left;
     margin-right: 15px;
     width: 200px;
-    height: 150px;
+    height: 160px;
 }
 .pub-content {
-    margin-left: 200px;
+    margin-left: 215px;
 }
+
+@media screen and (max-width: 768px) {
+    .pub-entry {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pub-img {
+        float: none;
+        margin: 0 auto 15px auto;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    
+    .pub-content {
+        margin-left: 0;
+    }
+    
+    .sort-buttons, .search-container {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .sort-buttons button, .search-container input {
+        margin: 5px;
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
 .sort-buttons {
     text-align: right;
     margin-bottom: 20px;
@@ -78,10 +110,11 @@
         <img class="pub-img" src="images/publication/2024_gem.png" alt="Publication Image">
         <div class="pub-content">
             <h4><a href="https://openreview.net/forum?id=NQEe7B7bSw">Preserving Diversity in Supervised Fine-tuning of Large Language Models</a></h4>
+
             <p><b>Ziniu Li</b>, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo</p>
             <p>The 13th International Conference on Learning Representations (ICLR), 2025<br>
             <span style="color:red">Best Paper Runner-up</span> at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning<br>
-            (Previously titled as "Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity")</p>
+            <font size="2.5">(Previously titled as "Entropic Distribution Matching in Supervised Fine-tuning of LLMs: Less Overfitting and Better Diversity")</font></p>
         </div>
     </div>
 
