@@ -24,7 +24,7 @@ Feel free to contact me if you want to discuss some ideas.
 
 == Research Statement
 
-My research focuses on the *algorithm design* and *theoretical analysis* of *machine learning* models, particularly in *reinforcement learning*. Currently, I am primarily working on *large language models* to pursue the development of an agent capable of universal intelligence. My work has been recognized with several honors, including *Best-Paper Runner-Up* (at NeurIPS 2024 FITML Workshop), *Oral Presentation* (ICLR2024 Tiny Paper Track, UAI 2023, NeurIPS 2021 EcoRL Workshop), and *Spotlight Presentation* (NeurIPS 2023). 
+My research focuses on the *algorithm design* and *theoretical analysis* of *machine learning* models, particularly in *reinforcement learning*. Currently, I am primarily working on *large language models* to pursue the development of an agent capable of universal intelligence. My work has been recognized with several honors, including *Best-Paper Runner-Up* (NeurIPS 2024 FITML Workshop), *Oral Presentation* (ICLR2024 Tiny Paper Track, UAI 2023, NeurIPS 2021 EcoRL Workshop), and *Spotlight Presentation* (NeurIPS 2023). 
 
 In the field of large language models, my work spans several key areas: data selection ([https://openreview.net/forum?id=vO04AzsB49 NeurIPS 2023 Spotlight]), diversity-preserving supervised fine-tuning ([https://openreview.net/forum?id=NQEe7B7bSw ICLR 2025, NeurIPS 2024 FITML Workshop Best Paper Runner-up]), generalization of RLHF ([https://openreview.net/forum?id=lNEFatlsQb ICLR 2024 Tiny Paper Oral]), computationally efficient RLHF ([https://arxiv.org/abs/2310.10505 ICML 2024]), and hallucination mitigation ([https://openreview.net/pdf?id=kX2EqGUp5B ICLR 2025]).
 
@@ -39,7 +39,7 @@ I also work on optimization-centric topics with other researchers, including und
 
 ~~~
   [https://openreview.net/forum?id=NQEe7B7bSw Preserving Diversity in Supervised Fine-tuning of Large Language Models] \n
-   *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Ruoyu Sun, Zhi-Quan Luo \n
+   *Ziniu Li*, Congliang Chen, Tian Xu, Zeyu Qin, Jiancong Xiao, Zhi-Quan Luo, Ruoyu Sun \n
   (The 13th International Conference on Learning Representations (ICLR), 2025) \n
   ({{<span style="color:red">Best Paper Runner-up</span>}} at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability)
   
