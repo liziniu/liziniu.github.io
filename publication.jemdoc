@@ -25,7 +25,7 @@
 
 <div class="sort-buttons">
     Sort by: 
-    <button onclick="sortByYear()">Year</button>
+    <button onclick="sortByYear()">Date</button>
     <button onclick="sortByTitle()">Title</button>
 </div>
 <div class="search-container">

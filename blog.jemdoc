@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{blog.html}, nofooter
+
+== Blog
+
+=== English Blog 
+
+- [https://tangible-polo-203.notion.site/Can-Better-Cold-Start-Strategies-Improve-RL-Training-for-LLMs-17aa0742a51680828616c867ed53bc6b Can Better Cold-Start Strategies Improve RL Training for LLMs?]
+
+=== Chinese Blog 
+
+~~~
+{}{raw}
+<ul>
+  <li><a href="https://zhuanlan.zhihu.com/p/662191782">ReMax: 一种高效，可替代PPO的RLHF算法</a></li>
+  <li><a href="https://zhuanlan.zhihu.com/p/558967559">模仿学习理论与算法</a></li>
+</ul>
+~~~
+
+=== WeChat Public Article 
+
+~~~
+{}{raw}
+<ul>
+  <li><a href="https://mp.weixin.qq.com/s/JNT9ixjUHdWkbkuyeSeQkA">ICLR 2025 | 基于模块归因和干预的大型视觉语言模型幻觉缓解</li>
+  <li><a href="https://mp.weixin.qq.com/s/Vg1hyPWyhf47vim7H6_L2w">i-Future报告｜基于熵最大原则的大语言模型微调方法</a></li>
+  <li><a href="https://mp.weixin.qq.com/s/LOhtmS9MCZSsRBDAq2mEuQ">Adam有了mini版：内存占用少一半，吞吐量提升50%</a></li>
+  <li><a href="https://mp.weixin.qq.com/s/3I0kOE1FprOeXSEERVVBIQ">在RTX 4090被限制的时代下，让大模型使用RLHF更高效的方法来了</a></li>
+  <li><a href="https://mp.weixin.qq.com/s/UjLIaWlWIkt8wMU0VuzPgw">实现模仿学习样本效率的理论新突破，南栖提高效对抗式模仿学习算法</a></li>
+</ul>
+~~~
+
