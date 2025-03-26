@@ -1,0 +1,7 @@
+# jemdoc: menu{MENU}{talk.html}, nofooter
+
+== Talk
+
+- \[2025-03\] [./docs/slides/LLM-Post-Training-2025-03-26.pdf LLM Post-Training: Formulation and Algorithms] @ Peking University
+
+- \[2025-03\] [./docs/slides/GEM-2025-03-23.pdf Preserving Output Diversity in Supervised Fine-Tuning of Large Language Models] @ Xi'an Jiaotong University
