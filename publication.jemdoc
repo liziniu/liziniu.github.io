@@ -97,6 +97,15 @@
 
     <!-- 2025 Publications -->
 
+    <div class="pub-entry" data-year="2025.05" data-title="Controlling">
+        <img class="pub-img" src="images/publication/2025_latent_action.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2405.17039">Controlling Large Language Model with Latent Actions</a></h4>
+            <p>Chengxing Jia, <b>Ziniu Li</b>, Pengyuan Wang, Yi-Chen Li, Zhenyu Hou, Yuxiao Dong, Yang Yu</p>
+            <p>The 42nd International Conference on Machine Learning (ICML), 2025 </p>
+        </div>
+    </div>
+
     <div class="pub-entry" data-year="2025.01" data-title="Adam-mini">
         <img class="pub-img" src="images/publication/2024_adam_mini.png" alt="Publication Image">
         <div class="pub-content">
@@ -172,15 +181,6 @@
             <h4><a href="https://ieeexplore.ieee.org/document/10634527">Sensing Jamming Strategy from Limited Observations: An Imitation Learning Perspective</a></h4>
             <p>Youlin Fan, Bo Jiu, Wenqiang Pu, <b>Ziniu Li</b>, Kang Li, Hongwei Liu</p>
             <p>IEEE Transactions on Signal Processing (TSP)</p>
-        </div>
-    </div>
-
-    <div class="pub-entry" data-year="2024.05" data-title="BWArea Model">
-        <img class="pub-img" src="images/publication/2024_bwarea.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2405.17039">BWArea Model: Learning World Model, Inverse Dynamics, and Policy for Controllable Language Generation</a></h4>
-            <p>Chengxing Jia, Pengyuan Wang, <b>Ziniu Li</b>, Yi-Chen Li, Zhilong Zhang, Nan Tang, Yang Yu</p>
-            <p>arXiv:2405.17039</p>
         </div>
     </div>
 
