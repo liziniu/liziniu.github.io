@@ -97,6 +97,24 @@
 
     <!-- 2025 Publications -->
 
+    <div class="pub-entry" data-year="2025.06" data-title="Code">
+        <img class="pub-img" src="images/publication/2025_cort.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2506.09820">CoRT: Code-integrated Reasoning within Thinking</a></h4>
+            <p>Chengpeng Li*, Zhengyang Tang*, <b>Ziniu Li*</b>, Mingfeng Xue, Keqin Bao, Tian Ding, Ruoyu Sun, Benyou Wang, Xiang Wang, Junyang Lin, Dayiheng Liu</p>
+            <p>arXiv:2506.09820</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.06" data-title="Quality">
+        <img class="pub-img" src="images/publication/2025_qdrt.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2506.07121">Quality-Diversity Red-Teaming: Automated Generation of High-Quality and Diverse Attackers for Large Language Models</a></h4>
+            <p>Ren-Jian Wang, Ke Xue, Zeyu Qin, <b>Ziniu Li</b>, Sheng Tang, Hao-Tian Li, Shengcai Liu, Chao Qian</p>
+            <p>arXiv:2506.07121</p>
+        </div>
+    </div>
+
     <div class="pub-entry" data-year="2025.05" data-title="Spectral">
         <img class="pub-img" src="images/publication/2025_spo.png" alt="Publication Image">
         <div class="pub-content">
