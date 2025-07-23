@@ -94,6 +94,23 @@
 </style>
 
 <div id="publications">
+    <div class="pub-entry" data-year="2025.07" data-title="Scalable Oversight via Critic">
+        <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2501.05727">Enabling Scalable Oversight via Self-Evolving Critic</a></h4>
+            <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
+            <p>Conference on Language Modeling (COLM), 2025</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.06" data-title="Survey">
+        <img class="pub-img" src="images/publication/2025_math_survey.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2506.08446">A Survey on Large Language Models for Mathematical Reasoning</a></h4>
+            <p>Peng-Yuan Wang, Tian-Shuo Liu, Chenyang Wang, Yi-Di Wang, Shu Yan, Cheng-Xing Jia, Xu-Hui Liu, Xin-Wei Chen, Jia-Cheng Xu, <b>Ziniu Li</b>, Yang Yu</p>
+            <p>arXiv:2506.09820</p>
+        </div>
+    </div>
 
     <!-- 2025 Publications -->
 
@@ -170,15 +187,6 @@
             <h4><a href="https://openreview.net/forum?id=Bjq4W7P2Us">Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention</a></h4>
             <p>Tianyun Yang, <b>Ziniu Li</b>, Juan Cao, Chang Xu</p>
             <p>The 13th International Conference on Learning Representations (ICLR), 2025</p>
-        </div>
-    </div>
-
-    <div class="pub-entry" data-year="2025.01" data-title="Scalable Oversight via Critic">
-        <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2501.05727">Enabling Scalable Oversight via Self-Evolving Critic</a></h4>
-            <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
-            <p>arXiv:2501.05727</p>
         </div>
     </div>
 
