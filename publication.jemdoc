@@ -94,6 +94,17 @@
 </style>
 
 <div id="publications">
+
+    <div class="pub-entry" data-year="2025.08" data-title="Bridging Formal Language">
+        <img class="pub-img" src="images/publication/2025_formal_cot.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2508.09099">Bridging Formal Language with Chain-of-Thought Reasoning to Geometry Problem Solving</a></h4>
+            <p>Zhengyang Tang*, Yunwen  Li*, <b>Ziniu Li*</b>, Zhihang Lin,  Ruoyu Sun, Tian Ding</p>
+            <p>arxiv:2508.09099</p>
+        </div>
+    </div>
+
+
     <div class="pub-entry" data-year="2025.07" data-title="Scalable Oversight via Critic">
         <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
         <div class="pub-content">
