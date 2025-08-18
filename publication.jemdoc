@@ -95,11 +95,13 @@
 
 <div id="publications">
 
+    <!-- 2025 Publications -->
+
     <div class="pub-entry" data-year="2025.08" data-title="Bridging Formal Language">
         <img class="pub-img" src="images/publication/2025_formal_cot.png" alt="Publication Image">
         <div class="pub-content">
             <h4><a href="https://arxiv.org/abs/2508.09099">Bridging Formal Language with Chain-of-Thought Reasoning to Geometry Problem Solving</a></h4>
-            <p>Zhengyang Tang*, Yunwen  Li*, <b>Ziniu Li*</b>, Zhihang Lin,  Ruoyu Sun, Tian Ding</p>
+            <p>Tianyun Yang*, Yunwen  Li*, <b>Ziniu Li*</b>, Zhihang Lin,  Ruoyu Sun, Tian Ding</p>
             <p>arxiv:2508.09099</p>
         </div>
     </div>
@@ -114,23 +116,21 @@
         </div>
     </div>
 
-    <div class="pub-entry" data-year="2025.06" data-title="Survey">
-        <img class="pub-img" src="images/publication/2025_math_survey.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2506.08446">A Survey on Large Language Models for Mathematical Reasoning</a></h4>
-            <p>Peng-Yuan Wang, Tian-Shuo Liu, Chenyang Wang, Yi-Di Wang, Shu Yan, Cheng-Xing Jia, Xu-Hui Liu, Xin-Wei Chen, Jia-Cheng Xu, <b>Ziniu Li</b>, Yang Yu</p>
-            <p>arXiv:2506.09820</p>
-        </div>
-    </div>
-
-    <!-- 2025 Publications -->
-
     <div class="pub-entry" data-year="2025.06" data-title="Code">
         <img class="pub-img" src="images/publication/2025_cort.png" alt="Publication Image">
         <div class="pub-content">
             <h4><a href="https://arxiv.org/abs/2506.09820">CoRT: Code-integrated Reasoning within Thinking</a></h4>
             <p>Chengpeng Li*, Zhengyang Tang*, <b>Ziniu Li*</b>, Mingfeng Xue, Keqin Bao, Tian Ding, Ruoyu Sun, Benyou Wang, Xiang Wang, Junyang Lin, Dayiheng Liu</p>
             <p>arXiv:2506.09820</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.06" data-title="Survey">
+        <img class="pub-img" src="images/publication/2025_math_survey.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2506.08446">A Survey on Large Language Models for Mathematical Reasoning</a></h4>
+            <p>Peng-Yuan Wang, Tian-Shuo Liu, Chenyang Wang, Yi-Di Wang, Shu Yan, Cheng-Xing Jia, Xu-Hui Liu, Xin-Wei Chen, Jia-Cheng Xu, <b>Ziniu Li</b>, Yang Yu</p>
+            <p>arXiv:2506.08446</p>
         </div>
     </div>
 
