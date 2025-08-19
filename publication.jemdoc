@@ -97,6 +97,15 @@
 
     <!-- 2025 Publications -->
 
+    <div class="pub-entry" data-year="2025.08" data-title="Algorithmic Bias">
+        <img class="pub-img" src="images/publication/2024_preference.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2405.16455">On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization</a></h4>
+            <p>Jiancong Xiao, <b>Ziniu Li</b>, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su</p>
+            <p>Accepted by Journal of the American Statistical Association (JASA), 2025 </p>
+        </div>
+    </div>
+
     <div class="pub-entry" data-year="2025.08" data-title="Bridging Formal Language">
         <img class="pub-img" src="images/publication/2025_formal_cot.png" alt="Publication Image">
         <div class="pub-content">
@@ -107,10 +116,10 @@
     </div>
 
 
-    <div class="pub-entry" data-year="2025.07" data-title="Scalable Oversight via Critic">
+    <div class="pub-entry" data-year="2025.07" data-title="Self-Evolving Critique">
         <img class="pub-img" src="images/publication/2025_critic_llm.png" alt="Publication Image">
         <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2501.05727">Enabling Scalable Oversight via Self-Evolving Critic</a></h4>
+            <h4><a href="https://arxiv.org/abs/2501.05727">Self-Evolving Critique Abilities in Large Language Models</a></h4>
             <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
             <p>Conference on Language Modeling (COLM), 2025</p>
         </div>
@@ -245,15 +254,6 @@
             <h4><a href="https://arxiv.org/abs/2310.10505">ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models</a></h4>
             <p><b>Ziniu Li</b>, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo</p>
             <p>The 41st International Conference on Machine Learning (ICML), 2024</p>
-        </div>
-    </div>
-
-    <div class="pub-entry" data-year="2024.05" data-title="Algorithmic Bias">
-        <img class="pub-img" src="images/publication/2024_preference.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2405.16455">On the Algorithmic Bias of Aligning Large Language Models with RLHF: Preference Collapse and Matching Regularization</a></h4>
-            <p>Jiancong Xiao, <b>Ziniu Li</b>, Xingyu Xie, Emily Getzen, Cong Fang, Qi Long, Weijie J. Su</p>
-            <p>arXiv:2405.16455</p>
         </div>
     </div>
 
