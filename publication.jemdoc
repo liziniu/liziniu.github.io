@@ -97,6 +97,17 @@
 
     <!-- 2025 Publications -->
 
+
+    <div class="pub-entry" data-year="2025.08" data-title="TreePO">
+        <img class="pub-img" src="images/publication/2025_treepo.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2508.17445">TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-based Modeling</a></h4>
+            <p>Yizhi Li, Qingshui Gu, Zhoufutu Wen, <b>Ziniu Li</b>, Tianshun Xing, Shuyue Guo, Tianyu Zheng, Xin Zhou, Xingwei Qu, Wangchunshu Zhou, Zheng Zhang, Wei Shen, Qian Liu, Chenghua Lin, Jian Yang, Ge Zhang, Wenhao Huang</p>
+            <p>arXiv:2508.17445</p>
+        </div>
+    </div>
+
+
     <div class="pub-entry" data-year="2025.08" data-title="Algorithmic Bias">
         <img class="pub-img" src="images/publication/2024_preference.png" alt="Publication Image">
         <div class="pub-content">
