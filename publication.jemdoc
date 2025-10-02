@@ -97,6 +97,24 @@
 
     <!-- 2025 Publications -->
 
+    <div class="pub-entry" data-year="2025.10" data-title="RL Survey">
+        <img class="pub-img" src="images/publication/2025_rl_survey.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="docs/RL4LLM_Survey.pdf"> Review of Reinforcement Learning for Large Language Models: Formulations, Algorithms, and Opportunities</a></h4>
+            <p><b>Ziniu Li</b>, Pengyuan Wang, Tian Xu, Tian Ding, Ruoyu Sun, Yang Yu</p>
+            <p>Under review</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.09" data-title="Knapsack RL">
+        <img class="pub-img" src="images/publication/2025_knapsack.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2509.25849">Knapsack RL: Unlocking Exploration of LLMs via Optimizing Budget Allocation</a></h4>
+            <p><b>Ziniu Li</b>, Congliang Chen, Tianyun Yang, Tian Ding, Ruoyu Sun, Ge Zhang, Wenhao Huang, Zhi-Quan Luo</p>
+            <p>arXiv:2509.25849</p>
+        </div>
+    </div>
+
 
     <div class="pub-entry" data-year="2025.08" data-title="TreePO">
         <img class="pub-img" src="images/publication/2025_treepo.png" alt="Publication Image">
