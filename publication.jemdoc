@@ -97,6 +97,36 @@
 
     <!-- 2025 Publications -->
 
+    <div class="pub-entry" data-year="2025.10" data-title="Looped Language Model">
+        <img class="pub-img" src="images/publication/2025_ut.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2510.25741">Scaling Latent Reasoning via Looped Language Models</a></h4>
+            <p>Rui-Jie Zhu*, Zixuan Wang*, Kai Hua*, Tianyu Zhang*, <b>Ziniu Li*</b>, Haoran Que*, Boyi Wei*, Zixin Wen*, Fan Yin*, He Xing*, Lu Li, Jiajun Shi, Kaijing Ma, Shanda Li, Taylor Kergan, Andrew Smith, Xingwei Qu, Mude Hui, Bohong Wu, Qiyang Min, Hongzhi Huang, Xun Zhou, Wei Ye, Jiaheng Liu, Jian Yang, Yunfeng Shi, Chenghua Lin, Enduo Zhao, Tianle Cai, Ge Zhang, Wenhao Huang, Yoshua Bengio, Jason Eshraghian </p>
+            <font size="2.5">(I lead the post-training part)</font>
+            <p></p>
+            <p>arXiv:2510.25741</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.10" data-title="OR">
+        <img class="pub-img" src="images/publication/2025_orgeval.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2510.27610">ORGEval: Graph-Theoretic Evaluation of LLMs in Optimization Modeling</a></h4>
+            <p>Zhuohan Wang, Ziwei Zhu, <b>Ziniu Li</b>, Congliang Chen, Yizhou Han, Yufeng Lin, Zhihang Lin, Angyang Gu, Xinglin Hu, Ruoyu Sun, Tian Ding </p>
+            <p></p>
+            <p>arXiv:2510.27610</p>
+        </div>
+    </div>
+
+    <div class="pub-entry" data-year="2025.10" data-title="Code">
+        <img class="pub-img" src="images/publication/2025_cort.png" alt="Publication Image">
+        <div class="pub-content">
+            <h4><a href="https://arxiv.org/abs/2510.20342">Teaching Language Models to Reason with Tools</a></h4>
+            <p>Chengpeng Li*, Zhengyang Tang*, <b>Ziniu Li*</b>, Mingfeng Xue, Keqin Bao, Tian Ding, Ruoyu Sun, Benyou Wang, Xiang Wang, Junyang Lin, Dayiheng Liu</p>
+            <p>Conference on Neural Information Processing System (NeurIPS) 39, 2025</p>
+        </div>
+    </div>
+
     <div class="pub-entry" data-year="2025.10" data-title="RL Survey">
         <img class="pub-img" src="images/publication/2025_rl_survey.png" alt="Publication Image">
         <div class="pub-content">
@@ -151,15 +181,6 @@
             <h4><a href="https://arxiv.org/abs/2501.05727">Self-Evolving Critique Abilities in Large Language Models</a></h4>
             <p>Zhengyang Tang*, <b>Ziniu Li*</b>, Zhenyang Xiao*, Tian Ding, Ruoyu Sun, Benyou Wang, Dayiheng Liu, Fei Huang, Tianyu Liu, Bowen Yu, Junyang Lin</p>
             <p>Conference on Language Modeling (COLM), 2025</p>
-        </div>
-    </div>
-
-    <div class="pub-entry" data-year="2025.06" data-title="Code">
-        <img class="pub-img" src="images/publication/2025_cort.png" alt="Publication Image">
-        <div class="pub-content">
-            <h4><a href="https://arxiv.org/abs/2506.09820">CoRT: Code-integrated Reasoning within Thinking</a></h4>
-            <p>Chengpeng Li*, Zhengyang Tang*, <b>Ziniu Li*</b>, Mingfeng Xue, Keqin Bao, Tian Ding, Ruoyu Sun, Benyou Wang, Xiang Wang, Junyang Lin, Dayiheng Liu</p>
-            <p>arXiv:2506.09820</p>
         </div>
     </div>
 
