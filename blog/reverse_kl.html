@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: false,
+    processEnvironments: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<link rel="stylesheet" href="../jemdoc.css" type="text/css" />
+<title></title>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    tags: 'ams'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../publication.html">Publication</a></div>
+<div class="menu-item"><a href="../blog.html">Blog</a></div>
+<div class="menu-item"><a href="../talk.html">Talk</a></div>
+<div class="menu-item"><a href="../docs/CV_Ziniu_Li.pdf">CV</a></div>
+</td>
+<td id="layout-content">
+<h1>Reverse KL Minimization Done Right</h1>
+<p><b>Author: Ziniu Li</b></p>
+<p><b>Date: February 1, 2026</b> </p>
+<div class="infoblock">
+<div class="blocktitle">Abstract</div>
+<div class="blockcontent">
+<p>We clarify the gradient estimation problem for reverse KL divergence minimization, a core component of on-policy distillation (OPD), KL-regularized reinforcement learning from human feedback (RLHF), and reinforcement learning with verifiable rewards (RLVR). We derive four unbiased gradient estimators arising from two formulations (K1 and K3) and two sampling strategies (on-policy and off-policy). Our main theoretical result establishes that K1 and K3 yield identical expected gradients: under a REINFORCE-style interpretation, they differ only by a constant (\(+1\)) in the reward signal, with the K3-style estimator exhibiting lower variance.</p>
+</div></div>
+<h2>Introduction</h2>
+<p>This paper studies gradient estimation for reverse Kullback-Leibler (KL) divergence minimization. This problem is central to three active research areas:</p>
+<ol>
+<li><p><b>On-Policy Distillation (OPD):</b> Compressing large language models into smaller ones while preserving output quality <a href="https://arxiv.org/abs/2306.08543">[gu2023minillm]</a>.</p>
+</li>
+<li><p><b>KL Regularization in RLHF:</b> Modern RLHF pipelines <a href="https://arxiv.org/abs/2203.02155">[ouyang2022training]</a> add a KL penalty \(\beta \cdot D_{\mathrm{KL}}(\pi \| \pi_{\mathrm{ref}})\) to prevent the policy from deviating too far from a reference model. Computing gradients of this term requires the same techniques.</p>
+</li>
+<li><p><b>Reinforcement Learning with Verifiable Rewards (RLVR):</b> Recent work on math reasoning <a href="https://arxiv.org/abs/2402.03300">[shao2024deepseekmath]</a> and code generation uses KL regularization to stabilize training. Correct gradient estimation directly impacts training stability.</p>
+</li>
+</ol>
+<h3>Organization</h3>
+<p>Section 2 reviews KL divergence estimators. Section 3 derives gradient estimators under two formulations. Section 4 provides PyTorch implementations.</p>
+<h2>Background: KL Divergence Estimators</h2>
+<p>Before deriving gradient estimators, we review how to estimate KL divergence itself. <a href="http://joschu.net/blog/kl-approx.html">Schulman (2020)</a> introduced a family of estimators for \(D_{\mathrm{KL}}(p \| q)\), named K1, K2, and K3, with different bias-variance tradeoffs.</p>
+<p>Let \(r(x) = \frac{q(x)}{p(x)}\) denote the likelihood ratio. The three estimators are:</p>
+<div class="infoblock">
+<div class="blocktitle">K1</div>
+<div class="blockcontent">
+<p>\[
+\mathbb{E}_{x \sim p}\left[-\log r(x)\right] = \mathbb{E}_{x \sim p}\left[\log \frac{p(x)}{q(x)}\right]
+\]</p>
+</div></div>
+<div class="infoblock">
+<div class="blocktitle">K2</div>
+<div class="blockcontent">
+<p>\[
+\mathbb{E}_{x \sim p}\left[\frac{1}{2}(\log r(x))^2\right]
+\]</p>
+</div></div>
+<div class="infoblock">
+<div class="blocktitle">K3</div>
+<div class="blockcontent">
+<p>\[
+\mathbb{E}_{x \sim p}\left[r(x) - 1 - \log r(x)\right] = \mathbb{E}_{x \sim p}\left[\frac{p(x)}{q(x)} - 1 + \log \frac{p(x)}{q(x)}\right]
+\]</p>
+</div></div>
+<h3>Properties</h3>
+<p>K1 is the standard definition and is unbiased. K2 is a second-order Taylor approximation, unbiased only when \(p = q\). K3 is also unbiased and has the key property that each sample contributes a non-negative value (since \(r - 1 - \log r \geq 0\) for all \(r > 0\)), which can reduce variance.</p>
+<h3>Naming Convention</h3>
+<p>Throughout this paper, we adopt the K1/K3 naming from <a href="http://joschu.net/blog/kl-approx.html">Schulman (2020)</a>. &ldquo;K1-style&rdquo; refers to gradient estimators derived from the standard reverse KL formulation, while &ldquo;K3-style&rdquo; refers to those derived from the augmented formulation. Without loss of generalization, we focus on the OPD setting for study and identify \(p(x) = P_{\text{student}}(x)\) and \(q(x) = P_{\text{teacher}}(x)\).</p>
+<h2>Gradient Estimators for Reverse KL</h2>
+<p>We derive gradient estimators under two formulations (K1 and K3) and two sampling regimes (on-policy and off-policy). Table 1 summarizes the four resulting estimators.</p>
+<table id="estimators">
+<tr class="r1"><td class="c1">Summary of gradient estimators for reverse KL minimization </td></tr>
+<tr class="r2"><td class="c1"><b>Method</b> </td><td class="c2"> <b>Sampling</b> </td><td class="c3"> <b>IS Weight</b> </td><td class="c4"> <b>Reward Signal</b> </td><td class="c5"> <b>Unbiased</b> </td></tr>
+<tr class="r3"><td class="c1">K1 On-policy </td><td class="c2"> \(x_i \sim P_{\text{student}}\) </td><td class="c3"> &#8201;&mdash;&#8201; </td><td class="c4"> \(r_i + 1\) </td><td class="c5"> ✓ </td></tr>
+<tr class="r4"><td class="c1">K1 Off-policy </td><td class="c2"> \(x_i \sim P_{\text{rollout}}\) </td><td class="c3"> \(w_i\) </td><td class="c4"> \(r_i + 1\) </td><td class="c5"> ✓ </td></tr>
+<tr class="r5"><td class="c1">K3 On-policy </td><td class="c2"> \(x_i \sim P_{\text{student}}\) </td><td class="c3"> &#8201;&mdash;&#8201; </td><td class="c4"> \(r_i\) </td><td class="c5"> ✓ </td></tr>
+<tr class="r6"><td class="c1">K3 Off-policy </td><td class="c2"> \(x_i \sim P_{\text{rollout}}\) </td><td class="c3"> \(w_i\) </td><td class="c4"> \(r_i\) </td><td class="c5"> ✓
+</td></tr></table>
+<p>Notation: \(r_i = \log \frac{P_{\text{student}}(x_i)}{P_{\text{teacher}}(x_i)}\), \(w_i = \mathrm{sg}\left[\frac{P_{\text{student}}(x_i)}{P_{\text{rollout}}(x_i)}\right]\).</p>
+<p>All estimators share the form: (IS weight) \(\times\) \(\nabla \log P_{\text{student}}(x_i)\) \(\times\) (reward).</p>
+<h3>K1-style Formulation</h3>
+<p>The K1-style approach directly differentiates the reverse KL objective using the log-derivative (REINFORCE) trick <a href="https://link.springer.com/article/10.1007/BF00992696">[williams1992simple]</a>. This corresponds to the formulation in <a href="https://arxiv.org/abs/2306.08543">[gu2023minillm]</a>.</p>
+<h4>Expected Gradient</h4>
+<p>Applying \(\nabla P(x) = P(x) \nabla \log P(x)\):</p>
+<p>\[
+\begin{aligned}
+\nabla D_{\text{reverse}} &= \nabla \sum_{x} P_{\text{student}}(x) \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} \\
+&= \sum_{x} \nabla P_{\text{student}}(x) \cdot \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + \sum_{x} P_{\text{student}}(x) \cdot \nabla \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} \\
+&= \sum_{x} P_{\text{student}}(x) \nabla \log P_{\text{student}}(x) \cdot \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + \sum_{x} P_{\text{student}}(x) \cdot \nabla \log P_{\text{student}}(x) \\
+&= \sum_{x} P_{\text{student}}(x) \cdot \nabla \log P_{\text{student}}(x) \cdot \left[ \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + 1 \right]
+\end{aligned}
+\]</p>
+<p>The term \(\log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + 1\) acts as a reward signal: positive when the student overestimates relative to the teacher.</p>
+<h4>Stochastic Estimator (On-Policy)</h4>
+<p>Monte Carlo sampling from the student yields an unbiased estimator:</p>
+<p>\[
+\widetilde{\nabla} D_{\text{reverse}} = \sum_{i=1}^{n} \nabla \log P_{\text{student}}(x_i) \cdot \left[ \log \frac{P_{\text{student}}(x_i)}{P_{\text{teacher}}(x_i)} + 1 \right], \quad x_i \sim P_{\text{student}}
+\]</p>
+<h4>Stochastic Estimator (Off-Policy with IS)</h4>
+<p>When samples come from a rollout policy \(P_{\text{rollout}}\) (e.g., replay buffer or training-inference mismatch), importance sampling corrects the distribution mismatch:</p>
+<p>\[
+\widetilde{\nabla} D_{\text{reverse}} = \sum_{i=1}^{n} \mathrm{sg}\left[\frac{P_{\text{student}}(x_i)}{P_{\text{rollout}}(x_i)}\right] \cdot \nabla \log P_{\text{student}}(x_i) \cdot \left[ \log \frac{P_{\text{student}}(x_i)}{P_{\text{teacher}}(x_i)} + 1 \right], \quad x_i \sim P_{\text{rollout}}
+\]</p>
+<p>Here, \(\mathrm{sg}[\cdot]\) denotes stop-gradient: the importance weight is treated as constant during backpropagation.</p>
+<h3>K3-style Formulation</h3>
+<p>The K3-style formulation uses a modified objective with the same gradient but potentially different variance properties.</p>
+<h4>K3-style Loss</h4>
+<p>Augmenting reverse KL with terms that vanish at optimality:</p>
+<p>\[
+D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \left[ \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + \frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} - 1 \right]
+\]</p>
+<p>The added terms \(\frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} - 1\) equal zero when \(P_{\text{student}} = P_{\text{teacher}}\).</p>
+<h4>Expected Gradient</h4>
+<p>Let \(f(x) = \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + \frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} - 1\). Differentiating:</p>
+<p>\[
+\nabla D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \nabla \log P_{\text{student}}(x) \cdot f(x) + \sum_{x} P_{\text{student}}(x) \cdot \nabla f(x)
+\]</p>
+<p>The second term simplifies to:</p>
+<p>\[
+\sum_{x} P_{\text{student}}(x) \cdot \nabla f(x) = \sum_{x} P_{\text{student}}(x) \nabla \log P_{\text{student}}(x) \left[1 - \frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} \right]
+\]</p>
+<p>Combining and simplifying yields:</p>
+<p>\[
+\nabla D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \nabla \log P_{\text{student}}(x) \cdot \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)}
+\]</p>
+<p>The \(+1\) term from K1-style cancels out.</p>
+<div class="infoblock">
+<div class="blocktitle">Theorem (Gradient Equivalence)</div>
+<div class="blockcontent">
+<p>\(\nabla D_{\text{reverse}} = \nabla D_{\text{reverse-k3}}\).</p>
+</div></div>
+<p><b>Proof:</b> The difference is:</p>
+<p>\[
+\nabla D_{\text{reverse}} - \nabla D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \cdot \nabla \log P_{\text{student}}(x) = \sum_{x} \nabla P_{\text{student}}(x) = \nabla \sum_{x} P_{\text{student}}(x) = 0
+\]</p>
+<h4>Stochastic Estimators</h4>
+<p><b>On-policy:</b></p>
+<p>\[
+\widetilde{\nabla} D_{\text{reverse-k3}} = \sum_{i=1}^{n} \nabla \log P_{\text{student}}(x_i) \cdot \log \frac{P_{\text{student}}(x_i)}{P_{\text{teacher}}(x_i)}, \quad x_i \sim P_{\text{student}}
+\]</p>
+<p><b>Off-policy:</b></p>
+<p>\[
+\widetilde{\nabla} D_{\text{reverse-k3}} = \sum_{i=1}^{n} \mathrm{sg}\left[\frac{P_{\text{student}}(x_i)}{P_{\text{rollout}}(x_i)}\right] \cdot \nabla \log P_{\text{student}}(x_i) \cdot \log \frac{P_{\text{student}}(x_i)}{P_{\text{teacher}}(x_i)}, \quad x_i \sim P_{\text{rollout}}
+\]</p>
+<h3>Discussion</h3>
+<h4>Interpretation as Policy Gradient</h4>
+<p>Both formulations can be viewed through the lens of policy gradients. In K1-style, the reward is \(r(x) + 1 = \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + 1\); in K3-style, the reward is simply \(r(x) = \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)}\). The gradient pushes down probability on samples where the student overestimates relative to the teacher (positive reward) and increases probability where it underestimates.</p>
+<p>The K3-style formulation is more direct: the \(+1\) term in K1-style is unnecessary. Two observations support this. First, shifting rewards by a constant does not change the optimal policy. Second, the \(+1\) term contributes only noise, as it vanishes in expectation:</p>
+<p>\[
+\sum_{x} P_{\text{student}}(x) \cdot \nabla \log P_{\text{student}}(x) \cdot 1 = \sum_{x} \nabla P_{\text{student}}(x) = \nabla \sum_{x} P_{\text{student}}(x) = 0
+\]</p>
+<h4>Implications for Baseline Design</h4>
+<p>In standard REINFORCE, subtracting an adaptive baseline \(b\) from the reward reduces variance without introducing bias, since \(\mathbb{E}[\nabla \log \pi(x) \cdot b] = 0\) (see e.g., <a href="https://arxiv.org/abs/2310.10505">[li2023remax]</a>, <a href="https://arxiv.org/abs/2402.03300">shao2024deepseekmath]</a>). For reverse KL minimization, however, additional baselines appear unnecessary: the K3-style reward \(\log P_{\text{student}}(x) - \log P_{\text{teacher}}(x)\) is inherently relative, comparing student and teacher probabilities directly. This built-in structure already provides the variance reduction that baselines typically offer.</p>
+<h3>Variance Comparison</h3>
+<p>Theoretically, the K3-style estimator inherently exhibits lower variance than the K1-style estimator. This property is most evident at optimality, where \(P_{\text{student}}(x) = P_{\text{teacher}}(x)\). In this scenario, the gradient contribution of the K3-style estimator vanishes pointwise (becoming exactly \(0\) for every sample), as the reward signal is \(\log 1 = 0\). In contrast, the K1-style estimator produces a gradient of \(\nabla \log P_{\text{student}}(x) \cdot 1\). While this term vanishes in expectation, it remains non-zero for individual samples, introducing purely zero-mean noise that inflates the variance of the stochastic gradient.</p>
+<p>Empirically, we validate this advantage in Figure 1. Using a controlled setting where model parameters are randomly initialized from a Gaussian distribution and normalized via softmax, we compare the gradient variance of both estimators. The results confirm that the K1-style estimator exhibits approximately 2\(\times\) higher variance than the K3-style formulation.</p>
+<table class="imgtable"><tr><td>
+<img src="../images/blog/reverse_kl/k1_k3_comparison.png" alt="Variance comparison" width="600px" />&nbsp;</td>
+<td align="left"><p>Variance comparison between K1 and K3 gradient estimators across different parameter initializations. K1-style exhibits approximately 2× higher variance.</p>
+</td></tr></table>
+<div class="infoblock">
+<div class="blocktitle">Remark (Variance vs. Gradient Variance)</div>
+<div class="blockcontent">
+<p>Lower variance in a KL estimator does not automatically imply lower variance in the corresponding gradient estimator. Differentiation amplifies high-frequency components: if a function contains oscillations at frequency \(\omega\), their contribution to gradient variance scales as \(\omega^2\). A low-variance estimator with small high-frequency fluctuations can thus yield a high-variance gradient.</p>
+<p>Concretely, consider \(X(z) = 0.1\sin(z) + 0.1\sin(10z)\) and \(Y(z) = 0.5\sin(z)\) with \(z \sim \mathrm{Uniform}[0, 2\pi]\). Both have zero mean: \(\mathbb{E}[X] = \mathbb{E}[Y] = 0\). Yet \(\mathrm{Var}[X] = 0.01 < 0.125 = \mathrm{Var}[Y]\), while \(\mathrm{Var}[dX / dz] = 0.505 > 0.125 = \mathrm{Var}[dY / dz]\). The high-frequency term \(\sin(10z)\), though small in amplitude, dominates the gradient variance after multiplication by \(\omega = 10\).</p>
+<p>For K1 and K3 gradient estimators, we empirically observe that both the estimator variance and gradient variance are lower for K3, but this coincidence should not be assumed in general.</p>
+</div></div>
+<h2>PyTorch Implementation</h2>
+<p>This section provides PyTorch pseudo-code for K3-style loss functions, which we recommend over K1-style due to lower variance.</p>
+<h3>K3 On-Policy Loss</h3>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+<span class="statement">import</span> torch
+
+<span class="statement">def</span> k3_onpolicy_loss(log_prob_student, log_prob_teacher):
+    <span class="comment"># K3 on-policy distillation loss.</span>
+    <span class="comment"># Args: log_prob_student (requires grad), log_prob_teacher (no grad)</span>
+    <span class="comment"># Returns: Scalar loss <span class="statement">for</span> backpropagation</span>
+
+    <span class="statement">with</span> torch.no_grad():
+        reward = log_prob_student - log_prob_teacher
+
+    loss = (log_prob_student * reward).mean()
+    <span class="statement">return</span> loss
+</pre></div></div>
+<h3>K3 Off-Policy Loss</h3>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+<span class="statement">import</span> torch
+
+<span class="statement">def</span> k3_offpolicy_loss(log_prob_student, log_prob_teacher,
+                       log_prob_rollout, clip_ratio=None):
+    <span class="comment"># K3 off-policy distillation loss <span class="statement">with</span> importance sampling.</span>
+    <span class="comment"># Args: log_prob_student, log_prob_teacher, log_prob_rollout, clip_ratio</span>
+    <span class="comment"># Returns: Scalar loss <span class="statement">for</span> backpropagation</span>
+
+    <span class="statement">with</span> torch.no_grad():
+        log_is_weight = log_prob_student - log_prob_rollout
+        is_weight = torch.exp(log_is_weight)
+
+        <span class="statement">if</span> clip_ratio <span class="builtin">is</span> <span class="builtin">not</span> None:
+            is_weight = torch.clamp(is_weight, max=clip_ratio)
+
+        reward = log_prob_student - log_prob_teacher
+
+    loss = (is_weight * log_prob_student * reward).mean()
+    <span class="statement">return</span> loss
+</pre></div></div>
+<h3>Common Mistakes</h3>
+<p>The following implementations are <b>incorrect</b> and cause training instabilities. These patterns are discussed in <a href="https://www.arxiv.org/pdf/2512.21852">[shah2025comedy]</a>.</p>
+<p><b>Example 1: WRONG - K3 in Reward Position</b></p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+<span class="statement">def</span> k3_loss_WRONG(log_prob_student, log_prob_teacher):
+    <span class="comment"># WRONG: Using K3 estimator <span class="statement">as</span> reward causes collapse.</span>
+    <span class="statement">with</span> torch.no_grad():
+        log_r = log_prob_teacher - log_prob_student
+        r = torch.exp(log_r)
+        reward = r - 1 - log_r  <span class="comment"># K3 term <span class="statement">as</span> reward -- WRONG</span>
+
+    loss = (log_prob_student * reward).mean()  <span class="comment"># BIASED</span>
+    <span class="statement">return</span> loss
+</pre></div></div>
+<p>Why? The validity of the K3 estimator for the KL divergence <b>value</b> relies on the identity \(\mathbb{E}_{x \sim P_{\text{student}}} \left[ \frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} - 1 \right] = 0\). However, this zero-mean property does not hold for the <b>gradient</b>. In the REINFORCE setting, the inclusion of the score function \(\nabla \log P_{\text{student}}(x)\) changes the expectation. Generally, \(\mathbb{E}_{x \sim P_{\text{student}}} \left[ \nabla \log P_{\text{student}}(x) \cdot \left(\frac{P_{\text{teacher}}(x)}{P_{\text{student}}(x)} - 1\right) \right] \neq 0\). Therefore, treating the control variate terms as part of the reward signal introduces bias into the gradient estimator.</p>
+<p><b>Example 2: WRONG - K1 in Loss Position</b></p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+<span class="statement">def</span> k1_loss_WRONG(log_prob_student, log_prob_teacher):
+    <span class="comment"># WRONG: Direct differentiation without REINFORCE.</span>
+    log_ratio = log_prob_student - log_prob_teacher
+    loss = log_ratio.mean()  <span class="comment"># BIASED -- gradient flows incorrectly</span>
+    <span class="statement">return</span> loss
+</pre></div></div>
+<p>Why? This implementation fails because standard automatic differentiation calculates the gradient of the sample value, not the gradient of the expectation. When &lsquo;loss.backward()&lsquo; is called on \(\mathcal{L}(x) = \log P_{\text{student}}(x) - \log P_{\text{teacher}}(x)\), it computes the pathwise derivative \(\nabla \log P_{\text{student}}(x)\). This ignores the dependency of the sampling distribution itself on the parameters (the &ldquo;score function&rdquo; term). The true gradient requires the REINFORCE estimator, \(\nabla \log P_{\text{student}}(x) \cdot (\log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)} + 1)\), which weighs the gradient direction by the KL value. Without this weighting, the optimizer simply attempts to maximize the likelihood of the sampled tokens unconditionally, effectively ignoring the teacher's distribution and the KL objective entirely.</p>
+<h2>Conclusion</h2>
+<p>We have presented a unified treatment of gradient estimation for reverse KL minimization in on-policy distillation. Our analysis shows that K1 and K3 formulations yield identical expected gradients, differing only by a constant baseline. We recommend K3-style implementations for their lower variance and cleaner form.</p>
+<h2>References</h2>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2306.08543">Gu et al. (2023). MiniLLM: Knowledge Distillation of Large Language Models</a>.</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022). Training language models to follow instructions with human feedback</a>.</p>
+</li>
+<li><p><a href="http://joschu.net/blog/kl-approx.html">Schulman (2020). Approximating KL Divergence</a> .</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2402.03300">Shao et al. (2024). DeepSeekMath: Pushing the Limits of Mathematical Reasoning</a>.</p>
+</li>
+<li><p><a href="https://www.arxiv.org/pdf/2512.21852">Shah et al. (2025). A Comedy of Errors: Understanding KL Divergence in RLHF</a>.</p>
+</li>
+<li><p><a href="https://link.springer.com/article/10.1007/BF00992696">Williams (1992). Simple statistical gradient-following algorithms for connectionist reinforcement learning</a>.</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2310.10505">Li et al. (2023). ReMax: A Simple, Effective, and Efficient Method for Aligning Large Language Models</a></p>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</body>
+</html>

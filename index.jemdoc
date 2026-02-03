@@ -3,34 +3,29 @@
 
 ~~~
 {}{img_left}{images/liziniu3.jpg}{alt text}{210}{280}{}
-Ph.D. student,\n
-[https://sds.cuhk.edu.cn/en School of Data Science], \n
-[https://www.cuhk.edu.cn/en The Chinese University of Hong Kong, Shenzhen]\n
+Research Scientist (Qingyun Talent Program) \n
+[https://hunyuan.tencent.com/ Tencent Hunyuan Team] \n
 
-Email: ziniuli@link.cuhk.edu.cn
+Email: liziniu1997@gmail.com
 
-[https://twitter.com/ZiniuLi \[Twitter\] ] [https://www.zhihu.com/people/mo-fei-10-41 \[Zhihu\] ]
+[https://scholar.google.com/citations?user=80UnKQQAAAAJ&hl=en \[Google Scholar\]]\n
+[https://twitter.com/ZiniuLi \[Twitter\] ] [https://www.zhihu.com/people/mo-fei-10-41 \[Zhihu\]]
 ~~~
 
 == About me
 
-I am a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), advised by [https://scholar.google.com/citations?user=dW3gcXoAAAAJ&hl=en Prof. Zhi-Quan (Tom) Luo].
+I hold a Ph.D. from [https://www.cuhk.edu.cn/en The Chinese University of Hong Kong, Shenzhen], where my research focused on large-scale reinforcement learning training and its applications in large language models.
 
-I am interested in artificial intelligence, especially reinforcement learning and large language models.
+I was advised by [https://tomluo123.github.io/ Prof. Tom Luo], a prominent applied mathematician in optimization and signal processing. My academic lineage extends to [https://www.mit.edu/~jnt/home.html Prof. John Tsitsiklis] of MIT—my advisor’s own advisor—who pioneered foundational reinforcement learning theory and co-introduced the actor-critic algorithm in 1999.
 
-I have worked/interned at Tencent, Nanjing University, Cardinal Operations, etc.
+== Experience 
 
-Feel free to contact me if you want to discuss some ideas.
+- 05\/2025 \- 01\/2026: Top Seed Intern @ Bytedance Seed, Beijing 
 
-== Research Statement
+- 10\/2021 \- 08\/2022: Intern @ Tencent AI Lab, Shenzhen 
 
-My research focuses on the *algorithm design* and *theoretical analysis* of *machine learning* models, particularly in *reinforcement learning*. Currently, I am primarily working on *large language models* to pursue the development of an agent capable of universal intelligence. My work has been recognized with several honors, including *Best-Paper Runner-Up* (NeurIPS 2024 FITML Workshop), *Oral Presentation* (ICLR2024 Tiny Paper Track, UAI 2023, NeurIPS 2021 EcoRL Workshop), and *Spotlight Presentation* (NeurIPS 2023). 
+- 07\/2019 \- 06\/2022: Research Assistant @ Nanjing University, Nanjing
 
-In the field of large language models, my work spans several key areas: data selection ([https://openreview.net/forum?id=vO04AzsB49 NeurIPS 2023 Spotlight]), diversity-preserving supervised fine-tuning ([https://openreview.net/forum?id=NQEe7B7bSw ICLR 2025, NeurIPS 2024 FITML Workshop Best Paper Runner-up]), generalization of RLHF ([https://openreview.net/forum?id=lNEFatlsQb ICLR 2024 Tiny Paper Oral]), computationally efficient RLHF ([https://arxiv.org/abs/2310.10505 ICML 2024]), and hallucination mitigation ([https://openreview.net/pdf?id=kX2EqGUp5B ICLR 2025]).
-
-In the field of imitation learning and reinforcement learning, I am interested in the theory of sample complexity ([https://arxiv.org/abs/2010.11876 NeurIPS 2020], [https://ieeexplore.ieee.org/document/9485061 TPAMI 2021], [https://arxiv.org/abs/2306.06563 UAI 2023 Oral]), efficient exploration ([https://openreview.net/forum?id=X0nrKAXu7g-  ICLR 2022, NeurIPS 2021 EcoRL Workshop Oral], [https://link.springer.com/chapter/10.1007/978-3-030-64096-5_7 DAI 2020]), as well as applications in robotics ([https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice ICLR 2024 Blog]) and signal processing ([https://ieeexplore.ieee.org/document/10634527 TSP 2024]).
-
-I also work on optimization-centric topics with other researchers, including understanding Adam in training Transformers ([https://arxiv.org/abs/2402.16788 NeurIPS 2024]), memory-efficient optimizers ([https://arxiv.org/abs/2406.16793 ICLR 2025]), zero-order optimization ([https://www.ijcai.org/proceedings/2020/205 IJCAI 2020]), and prompt-tuning ([https://aclanthology.org/2024.findings-emnlp.871.pdf EMNLP 2024]). 
 
 == Recent Highlights
 
@@ -59,48 +54,6 @@ I also work on optimization-centric topics with other researchers, including und
   *Ziniu Li*, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo \n
   (The 41st International Conference on Machine Learning (ICML), 2024) 
 
-  TL;DR: /This work shows that PPO overshoots for RLHF in LLMs and introduces ReMax, which requires half the memory of PPO and runs twice as fast /
+  TL;DR: /This work provides the foundation of REINFORCE-style methods in LLM training and introduces a method called ReMax that is computationally efficient than PPO /
 ~~~
 
-~~~
-  [https://openreview.net/forum?id=lNEFatlsQb When is RL better than DPO in RLHF? A Representation and Optimization Perspective] \n
-  *Ziniu Li\* *, Tian Xu\*, Yang Yu \n
-  ({{<span style="color:red">Oral Presentation</span>}}, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024)
-
-  TL;DR: /This work analyzes the reward modeling quality in view of representations and the optimization error sources /
-~~~
-
-
-
-
-== Service
-
-==== Reviewer
-
-NeurIPS ([https://neurips.cc/Conferences/2022/ProgramCommittee Top Reviewer]), ICML ([https://icml.cc/Conferences/2022/Reviewers Outstanding Reviewer]), ICLR ([https://iclr.cc/Conferences/2022/Reviewers Highlighted Reviewer]).
-
-==== Teaching Assistant
-
-- DDA6111: Discrete Optimization. 2022 Spring @ CUHKSZ
-
-- DDA6060: Machine Learning. 2023 Spring @ CUHKSZ
-
-- FTE4560: Basic Machine Learning. 2021 Spring @ CUHKSZ.
-
-- CSC4120: Design and Analysis of Algorithms. 2022 Fall, 2021 Fall @ CUHKSZ
-
-- MAT3007: Introduction to Optimization. 2020 Fall @ CUHKSZ
-
-==== Lecturer
-
-- Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX
-
-== Award
-
-- \[2024-12\] Best Paper Runner-up at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability
-
-- \[2024-01\] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY
-
-- \[2023-12\] Guo-Tai-Jun-An Scholarship. $20,000 CNY
-
-- \[2021-04\] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY

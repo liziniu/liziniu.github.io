@@ -6,18 +6,31 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: false,
+    processEnvironments: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <title>Ziniu Li</title>
-<!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    tags: 'ams'
+  }
+};
 </script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<!-- End MathJax -->
-</head>
-<body>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
@@ -33,22 +46,28 @@ MathJax.Hub.Config({
 </div>
 <table class="imgtable"><tr><td>
 <img src="images/liziniu3.jpg" alt="alt text" width="210px" height="280px" />&nbsp;</td>
-<td align="left"><p>Ph.D. student,<br />
-<a href="https://sds.cuhk.edu.cn/en">School of Data Science</a>, <br />
-<a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a><br /></p>
-<p>Email: ziniuli@link.cuhk.edu.cn</p>
-<p><a href="https://twitter.com/ZiniuLi">[Twitter]</a> <a href="https://www.zhihu.com/people/mo-fei-10-41">[Zhihu]</a></p>
+<td align="left"><p>Research Scientist (Qingyun Talent Program) <br />
+<a href="https://hunyuan.tencent.com/">Tencent Hunyuan Team</a> <br /></p>
+<p>Email: liziniu1997@gmail.com</p>
+<p><a href="https://scholar.google.com/citations?user=80UnKQQAAAAJ&amp;hl=en">[Google Scholar]</a><br />
+<a href="https://twitter.com/ZiniuLi">[Twitter]</a> <a href="https://www.zhihu.com/people/mo-fei-10-41">[Zhihu]</a></p>
 </td></tr></table>
 <h2>About me</h2>
-<p>I am a Ph.D. student at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), advised by <a href="https://scholar.google.com/citations?user=dW3gcXoAAAAJ&amp;hl=en">Prof. Zhi-Quan (Tom) Luo</a>.</p>
-<p>I am interested in artificial intelligence, especially reinforcement learning and large language models.</p>
-<p>I have worked/interned at Tencent, Nanjing University, Cardinal Operations, etc.</p>
-<p>Feel free to contact me if you want to discuss some ideas.</p>
-<h2>Research Statement</h2>
-<p>My research focuses on the <b>algorithm design</b> and <b>theoretical analysis</b> of <b>machine learning</b> models, particularly in <b>reinforcement learning</b>. Currently, I am primarily working on <b>large language models</b> to pursue the development of an agent capable of universal intelligence. My work has been recognized with several honors, including <b>Best-Paper Runner-Up</b> (NeurIPS 2024 FITML Workshop), <b>Oral Presentation</b> (ICLR2024 Tiny Paper Track, UAI 2023, NeurIPS 2021 EcoRL Workshop), and <b>Spotlight Presentation</b> (NeurIPS 2023). </p>
-<p>In the field of large language models, my work spans several key areas: data selection (<a href="https://openreview.net/forum?id=vO04AzsB49">NeurIPS 2023 Spotlight</a>), diversity-preserving supervised fine-tuning (<a href="https://openreview.net/forum?id=NQEe7B7bSw">ICLR 2025, NeurIPS 2024 FITML Workshop Best Paper Runner-up</a>), generalization of RLHF (<a href="https://openreview.net/forum?id=lNEFatlsQb">ICLR 2024 Tiny Paper Oral</a>), computationally efficient RLHF (<a href="https://arxiv.org/abs/2310.10505">ICML 2024</a>), and hallucination mitigation (<a href="https://openreview.net/pdf?id=kX2EqGUp5B">ICLR 2025</a>).</p>
-<p>In the field of imitation learning and reinforcement learning, I am interested in the theory of sample complexity (<a href="https://arxiv.org/abs/2010.11876">NeurIPS 2020</a>, <a href="https://ieeexplore.ieee.org/document/9485061">TPAMI 2021</a>, <a href="https://arxiv.org/abs/2306.06563">UAI 2023 Oral</a>), efficient exploration (<a href="https://openreview.net/forum?id=X0nrKAXu7g-">ICLR 2022, NeurIPS 2021 EcoRL Workshop Oral</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-030-64096-5_7">DAI 2020</a>), as well as applications in robotics (<a href="https://iclr-blog-track.github.io/2022/03/25/rethinking-valuedice">ICLR 2024 Blog</a>) and signal processing (<a href="https://ieeexplore.ieee.org/document/10634527">TSP 2024</a>).</p>
-<p>I also work on optimization-centric topics with other researchers, including understanding Adam in training Transformers (<a href="https://arxiv.org/abs/2402.16788">NeurIPS 2024</a>), memory-efficient optimizers (<a href="https://arxiv.org/abs/2406.16793">ICLR 2025</a>), zero-order optimization (<a href="https://www.ijcai.org/proceedings/2020/205">IJCAI 2020</a>), and prompt-tuning (<a href="https://aclanthology.org/2024.findings-emnlp.871.pdf">EMNLP 2024</a>). </p>
+<p>I hold a Ph.D. from <a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a>, where my research focused on large-scale reinforcement learning training and its applications in large language models.</p>
+<p>I was advised by <a href="https://tomluo123.github.io/">Prof. Tom Luo</a>, a prominent applied mathematician in optimization and signal processing. My academic lineage extends to <a href="https://www.mit.edu/~jnt/home.html">Prof. John Tsitsiklis</a> of MIT—my advisor’s own advisor—who pioneered foundational reinforcement learning theory and co-introduced the actor-critic algorithm in 1999.</p>
+<h2>Experience </h2>
+<ul>
+<li><p>05/2025 - 01/2026: Top Seed Intern @ Bytedance Seed, Beijing </p>
+</li>
+</ul>
+<ul>
+<li><p>10/2021 - 08/2022: Intern @ Tencent AI Lab, Shenzhen </p>
+</li>
+</ul>
+<ul>
+<li><p>07/2019 - 06/2022: Research Assistant @ Nanjing University, Nanjing</p>
+</li>
+</ul>
 <h2>Recent Highlights</h2>
 <p>*: indicating equal contribution or alphabetic ordering.</p>
 <div class="infoblock">
@@ -71,61 +90,8 @@ arXiv:2509.25849 </p>
 <p><a href="https://arxiv.org/abs/2310.10505">ReMax: A Simple, Effective, and Efficient Reinforcement Learning Method for Aligning Large Language Models</a> <br />
 <b>Ziniu Li</b>, Tian Xu, Yushun Zhang, Zhihang Lin, Yang Yu, Ruoyu Sun, Zhi-Quan Luo <br />
 (The 41st International Conference on Machine Learning (ICML), 2024) </p>
-<p>TL;DR: <i>This work shows that PPO overshoots for RLHF in LLMs and introduces ReMax, which requires half the memory of PPO and runs twice as fast </i></p>
+<p>TL;DR: <i>This work provides the foundation of REINFORCE-style methods in LLM training and introduces a method called ReMax that is computationally efficient than PPO </i></p>
 </div></div>
-<div class="infoblock">
-<div class="blockcontent">
-<p><a href="https://openreview.net/forum?id=lNEFatlsQb">When is RL better than DPO in RLHF? A Representation and Optimization Perspective</a> <br />
-<b>Ziniu Li* </b>, Tian Xu*, Yang Yu <br />
-(<span style="color:red">Oral Presentation</span>, The 12th International Conference on Learning Representations (ICLR) (Tiny Paper Track), 2024)</p>
-<p>TL;DR: <i>This work analyzes the reward modeling quality in view of representations and the optimization error sources </i></p>
-</div></div>
-<h2>Service</h2>
-<h4>Reviewer</h4>
-<p>NeurIPS (<a href="https://neurips.cc/Conferences/2022/ProgramCommittee">Top Reviewer</a>), ICML (<a href="https://icml.cc/Conferences/2022/Reviewers">Outstanding Reviewer</a>), ICLR (<a href="https://iclr.cc/Conferences/2022/Reviewers">Highlighted Reviewer</a>).</p>
-<h4>Teaching Assistant</h4>
-<ul>
-<li><p>DDA6111: Discrete Optimization. 2022 Spring @ CUHKSZ</p>
-</li>
-</ul>
-<ul>
-<li><p>DDA6060: Machine Learning. 2023 Spring @ CUHKSZ</p>
-</li>
-</ul>
-<ul>
-<li><p>FTE4560: Basic Machine Learning. 2021 Spring @ CUHKSZ.</p>
-</li>
-</ul>
-<ul>
-<li><p>CSC4120: Design and Analysis of Algorithms. 2022 Fall, 2021 Fall @ CUHKSZ</p>
-</li>
-</ul>
-<ul>
-<li><p>MAT3007: Introduction to Optimization. 2020 Fall @ CUHKSZ</p>
-</li>
-</ul>
-<h4>Lecturer</h4>
-<ul>
-<li><p>Machine Learning (Summer Course for Senior High School Students) @ X ACADEMY 2022 TechX</p>
-</li>
-</ul>
-<h2>Award</h2>
-<ul>
-<li><p>[2024-12] Best Paper Runner-up at NeurIPS 2024 Workshop on Fine-Tuning in Modern Machine Learning: Principles and Scalability</p>
-</li>
-</ul>
-<ul>
-<li><p>[2024-01] Runner-up of poster presentation award at the third doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY</p>
-</li>
-</ul>
-<ul>
-<li><p>[2023-12] Guo-Tai-Jun-An Scholarship. $20,000 CNY</p>
-</li>
-</ul>
-<ul>
-<li><p>[2021-04] Best oral presentation award at the first doctoral and postdoctoral forum of Shenzhen Research Institute of Big Data. $5,000 CNY</p>
-</li>
-</ul>
 </td>
 </tr>
 </table>
