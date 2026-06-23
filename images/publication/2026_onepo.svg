@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160">
+  <rect width="200" height="160" rx="10" fill="#f8f7ff"/>
+  <rect x="16" y="18" width="168" height="124" rx="8" fill="#ffffff" stroke="#d6d1ec"/>
+  <text x="24" y="40" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#453f72">OnePO</text>
+  <text x="24" y="56" font-family="Arial, sans-serif" font-size="11" fill="#70699a">one-stage policy opt</text>
+  <circle cx="55" cy="95" r="19" fill="#f2c94c"/>
+  <circle cx="100" cy="95" r="19" fill="#6fcf97"/>
+  <circle cx="145" cy="95" r="19" fill="#56ccf2"/>
+  <path d="M74 95 H81 M119 95 H126" stroke="#453f72" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 88 L61 96 L50 104" fill="none" stroke="#453f72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 88 L105 96 L94 104" fill="none" stroke="#453f72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M141 88 L150 96 L139 104" fill="none" stroke="#453f72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="36" y="129" font-family="Arial, sans-serif" font-size="11" fill="#453f72">SFT-free adaptation</text>
+</svg>
