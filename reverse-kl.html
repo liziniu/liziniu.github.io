@@ -1,55 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)']],
-    displayMath: [['\\[', '\\]']],
-    processEscapes: false,
-    processEnvironments: true
-  },
-  options: {
-    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-<link rel="stylesheet" href="../jemdoc.css" type="text/css" />
-<title></title>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-    tags: 'ams'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-item"><a href="../index.html">Home</a></div>
-<div class="menu-item"><a href="../publication.html">Publication</a></div>
-<div class="menu-item"><a href="../blog.html">Blog</a></div>
-<div class="menu-item"><a href="../talk.html">Talk</a></div>
-<div class="menu-item"><a href="../docs/CV_Ziniu_Li.pdf">CV</a></div>
-</td>
-<td id="layout-content">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reverse KL Minimization Done Right | Ziniu Li</title>
+  <meta name="description" content="A note on gradient estimation for reverse KL divergence minimization.">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="bio.html">Bio</a>
+    <a href="publications.html">Publications</a>
+    <a href="blog.html">Blog</a>
+    <a href="talks.html">Talks</a>
+    <a href="docs/CV_Ziniu_Li.pdf">CV</a>
+  </nav>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header-inner">
+        <h3 class="site-title"><a href="index.html">Ziniu Li</a></h3>
+        <nav class="main-menu" aria-label="Primary navigation">
+          <a href="bio.html">Bio</a>
+          <a href="publications.html">Publications</a>
+          <a href="blog.html">Blog</a>
+          <a href="talks.html">Talks</a>
+          <a href="docs/CV_Ziniu_Li.pdf">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <article class="article-page">
 <h1>Reverse KL Minimization Done Right</h1>
 <p><b>Author: Ziniu Li</b></p>
 <p><b>Date: February 1, 2026</b> </p>
-<div class="infoblock">
-<div class="blocktitle">Abstract</div>
-<div class="blockcontent">
+<aside class="note-block"><div class="note-title">Abstract</div><div class="note-content">
 <p>We clarify the gradient estimation problem for reverse KL divergence minimization, a core component of on-policy distillation (OPD), KL-regularized reinforcement learning from human feedback (RLHF), and reinforcement learning with verifiable rewards (RLVR). We derive four unbiased gradient estimators arising from two formulations (K1 and K3) and two sampling strategies (on-policy and off-policy). Our main theoretical result establishes that K1 and K3 yield identical expected gradients: under a REINFORCE-style interpretation, they differ only by a constant (\(+1\)) in the reward signal, with the K3-style estimator exhibiting lower variance.</p>
-</div></div>
+</div></aside>
 <h2>Introduction</h2>
 <p>This paper studies gradient estimation for reverse Kullback-Leibler (KL) divergence minimization. This problem is central to three active research areas:</p>
 <ol>
@@ -65,27 +63,21 @@ MathJax = {
 <h2>Background: KL Divergence Estimators</h2>
 <p>Before deriving gradient estimators, we review how to estimate KL divergence itself. <a href="http://joschu.net/blog/kl-approx.html">Schulman (2020)</a> introduced a family of estimators for \(D_{\mathrm{KL}}(p \| q)\), named K1, K2, and K3, with different bias-variance tradeoffs.</p>
 <p>Let \(r(x) = \frac{q(x)}{p(x)}\) denote the likelihood ratio. The three estimators are:</p>
-<div class="infoblock">
-<div class="blocktitle">K1</div>
-<div class="blockcontent">
+<aside class="note-block"><div class="note-title">K1</div><div class="note-content">
 <p>\[
 \mathbb{E}_{x \sim p}\left[-\log r(x)\right] = \mathbb{E}_{x \sim p}\left[\log \frac{p(x)}{q(x)}\right]
 \]</p>
-</div></div>
-<div class="infoblock">
-<div class="blocktitle">K2</div>
-<div class="blockcontent">
+</div></aside>
+<aside class="note-block"><div class="note-title">K2</div><div class="note-content">
 <p>\[
 \mathbb{E}_{x \sim p}\left[\frac{1}{2}(\log r(x))^2\right]
 \]</p>
-</div></div>
-<div class="infoblock">
-<div class="blocktitle">K3</div>
-<div class="blockcontent">
+</div></aside>
+<aside class="note-block"><div class="note-title">K3</div><div class="note-content">
 <p>\[
 \mathbb{E}_{x \sim p}\left[r(x) - 1 - \log r(x)\right] = \mathbb{E}_{x \sim p}\left[\frac{p(x)}{q(x)} - 1 + \log \frac{p(x)}{q(x)}\right]
 \]</p>
-</div></div>
+</div></aside>
 <h3>Properties</h3>
 <p>K1 is the standard definition and is unbiased. K2 is a second-order Taylor approximation, unbiased only when \(p = q\). K3 is also unbiased and has the key property that each sample contributes a non-negative value (since \(r - 1 - \log r \geq 0\) for all \(r > 0\)), which can reduce variance.</p>
 <h3>Naming Convention</h3>
@@ -148,11 +140,9 @@ D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \left[ \log \frac{P_{\tex
 \nabla D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \nabla \log P_{\text{student}}(x) \cdot \log \frac{P_{\text{student}}(x)}{P_{\text{teacher}}(x)}
 \]</p>
 <p>The \(+1\) term from K1-style cancels out.</p>
-<div class="infoblock">
-<div class="blocktitle">Theorem (Gradient Equivalence)</div>
-<div class="blockcontent">
+<aside class="note-block"><div class="note-title">Theorem (Gradient Equivalence)</div><div class="note-content">
 <p>\(\nabla D_{\text{reverse}} = \nabla D_{\text{reverse-k3}}\).</p>
-</div></div>
+</div></aside>
 <p><b>Proof:</b> The difference is:</p>
 <p>\[
 \nabla D_{\text{reverse}} - \nabla D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \cdot \nabla \log P_{\text{student}}(x) = \sum_{x} \nabla P_{\text{student}}(x) = \nabla \sum_{x} P_{\text{student}}(x) = 0
@@ -178,17 +168,12 @@ D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \left[ \log \frac{P_{\tex
 <h3>Variance Comparison</h3>
 <p>Theoretically, the K3-style estimator inherently exhibits lower variance than the K1-style estimator. This property is most evident at optimality, where \(P_{\text{student}}(x) = P_{\text{teacher}}(x)\). In this scenario, the gradient contribution of the K3-style estimator vanishes pointwise (becoming exactly \(0\) for every sample), as the reward signal is \(\log 1 = 0\). In contrast, the K1-style estimator produces a gradient of \(\nabla \log P_{\text{student}}(x) \cdot 1\). While this term vanishes in expectation, it remains non-zero for individual samples, introducing purely zero-mean noise that inflates the variance of the stochastic gradient.</p>
 <p>Empirically, we validate this advantage in Figure 1. Using a controlled setting where model parameters are randomly initialized from a Gaussian distribution and normalized via softmax, we compare the gradient variance of both estimators. The results confirm that the K1-style estimator exhibits approximately 2\(\times\) higher variance than the K3-style formulation.</p>
-<table class="imgtable"><tr><td>
-<img src="../images/blog/reverse_kl/k1_k3_comparison.png" alt="Variance comparison" width="600px" />&nbsp;</td>
-<td align="left"><p>Variance comparison between K1 and K3 gradient estimators across different parameter initializations. K1-style exhibits approximately 2× higher variance.</p>
-</td></tr></table>
-<div class="infoblock">
-<div class="blocktitle">Remark (Variance vs. Gradient Variance)</div>
-<div class="blockcontent">
+<figure class="article-figure"><img src="images/blog/reverse_kl/k1_k3_comparison.png" alt="Variance comparison" width="600px"><figcaption>Variance comparison between K1 and K3 gradient estimators across different parameter initializations. K1-style exhibits approximately 2× higher variance.</figcaption></figure>
+<aside class="note-block"><div class="note-title">Remark (Variance vs. Gradient Variance)</div><div class="note-content">
 <p>Lower variance in a KL estimator does not automatically imply lower variance in the corresponding gradient estimator. Differentiation amplifies high-frequency components: if a function contains oscillations at frequency \(\omega\), their contribution to gradient variance scales as \(\omega^2\). A low-variance estimator with small high-frequency fluctuations can thus yield a high-variance gradient.</p>
 <p>Concretely, consider \(X(z) = 0.1\sin(z) + 0.1\sin(10z)\) and \(Y(z) = 0.5\sin(z)\) with \(z \sim \mathrm{Uniform}[0, 2\pi]\). Both have zero mean: \(\mathbb{E}[X] = \mathbb{E}[Y] = 0\). Yet \(\mathrm{Var}[X] = 0.01 < 0.125 = \mathrm{Var}[Y]\), while \(\mathrm{Var}[dX / dz] = 0.505 > 0.125 = \mathrm{Var}[dY / dz]\). The high-frequency term \(\sin(10z)\), though small in amplitude, dominates the gradient variance after multiplication by \(\omega = 10\).</p>
 <p>For K1 and K3 gradient estimators, we empirically observe that both the estimator variance and gradient variance are lower for K3, but this coincidence should not be assumed in general.</p>
-</div></div>
+</div></aside>
 <h2>PyTorch Implementation</h2>
 <p>This section provides PyTorch pseudo-code for K3-style loss functions, which we recommend over K1-style due to lower variance.</p>
 <h3>K3 On-Policy Loss</h3>
@@ -275,8 +260,19 @@ D_{\text{reverse-k3}} = \sum_{x} P_{\text{student}}(x) \left[ \log \frac{P_{\tex
 <li><p><a href="https://arxiv.org/abs/2310.10505">Li et al. (2023). ReMax: A Simple, Effective, and Efficient Method for Aligning Large Language Models</a></p>
 </li>
 </ul>
-</td>
-</tr>
-</table>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="bio.html">Bio</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="talks.html">Talks</a>
+        <a href="docs/CV_Ziniu_Li.pdf">CV</a>
+        <span>&copy; 2026 Ziniu Li</span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

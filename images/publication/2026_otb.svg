@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160">
+  <rect width="200" height="160" rx="10" fill="#fffaf2"/>
+  <rect x="16" y="18" width="168" height="124" rx="8" fill="#ffffff" stroke="#ded0ba"/>
+  <text x="24" y="40" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#57432c">Optimal Token</text>
+  <text x="24" y="56" font-family="Arial, sans-serif" font-size="11" fill="#7d6b57">variance reduction</text>
+  <g stroke-linecap="round" stroke-width="4" fill="none">
+    <path d="M30 113 C51 70 74 134 95 88 S140 51 170 101" stroke="#d56b45"/>
+    <path d="M30 101 C55 89 75 104 98 92 S139 85 170 91" stroke="#3d7f7a"/>
+  </g>
+  <line x1="28" y1="120" x2="174" y2="120" stroke="#d8c6ad"/>
+  <line x1="28" y1="70" x2="28" y2="120" stroke="#d8c6ad"/>
+  <circle cx="98" cy="92" r="8" fill="#3d7f7a"/>
+  <text x="90" y="96" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">B</text>
+  <text x="112" y="129" font-family="Arial, sans-serif" font-size="11" fill="#57432c">token baseline</text>
+</svg>
