@@ -170,6 +170,22 @@ em {
   margin-top: 0.65rem;
 }
 
+.publications-hero p {
+  max-width: none;
+}
+
+.bio-hero {
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: start;
+}
+
+.bio-photo {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
 .bio-affiliation {
   font-size: 1.05rem;
   line-height: 1.45;
@@ -545,6 +561,15 @@ h5 {
   .page-hero {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .bio-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-photo {
+    width: 180px;
+    height: 270px;
   }
 
   .two-column {
