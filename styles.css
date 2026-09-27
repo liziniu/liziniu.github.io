@@ -411,12 +411,17 @@ h5 {
 }
 
 .article-figure img {
-  max-width: 100%;
+  display: block;
+  width: min(100%, 600px);
+  margin: 0 auto;
   height: auto;
   border: 1px solid var(--line);
 }
 
 .article-figure figcaption {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 0.55rem;
   color: #5b6572;
   font-size: 0.94rem;
@@ -444,6 +449,22 @@ h5 {
 
 .builtin {
   color: #8c1515;
+}
+
+.accent-blue {
+  color: var(--blue);
+}
+
+.accent-red {
+  color: #8c1515;
+}
+
+.formula-blue {
+  color: var(--blue);
+}
+
+.formula-blue mjx-container {
+  color: var(--blue);
 }
 
 .content-section {
